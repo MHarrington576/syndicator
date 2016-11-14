@@ -118,11 +118,9 @@ var LoginContainer = React.createClass({
 
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-3 col-xs-6">
             <h2>Log In</h2>
             <LoginForm logInUser={this.logInUser} />
-          </div>
-          <div className="col-md-6">
             <h2>Sign Up</h2>
             <SignUpForm signUpNewUser={this.signUpNewUser} />
           </div>
