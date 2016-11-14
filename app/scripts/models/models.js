@@ -25,7 +25,7 @@ var User = Backbone.Model.extend({
     $.ajax(loginUrl).then(function(response){
       localStorage.setItem('token', response.sessionToken);
       // Backbone.history.navigate('teams/', {trigger: true});
-    })
+    });
   }
 });
 

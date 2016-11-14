@@ -13,14 +13,14 @@ var AppRouter = Backbone.Router.extend({
   },
 
   initialize: function(){
-    setUpParse('tiyfeefall2016', 'parietinaeumbra')
+    setUpParse('tiyfeefall2016', 'parietinaeumbra');
   },
 
   index: function(){
     ReactDOM.render(
       React.createElement(LoginContainer),
       document.getElementById('app')
-    )
+    );
   }
 });
 

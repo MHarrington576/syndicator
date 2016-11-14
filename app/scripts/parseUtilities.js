@@ -6,7 +6,7 @@ function setUpParse(appId, apiKey, sessionId){
       xhr.setRequestHeader('X-Parse-Application-Id', appId);
       xhr.setRequestHeader('X-Parse-Rest-API-Key', apiKey);
 
-      if(sessionId){
+      if (sessionId){
         xhr.setRequestHeader('X-Parse-Session-Token', sessionId);
       }
     }
