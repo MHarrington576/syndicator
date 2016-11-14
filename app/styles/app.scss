@@ -1,10 +1,15 @@
 $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'https://fonts.googleapis.com/css?family=Raleway|Oswald';
 
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
 }
