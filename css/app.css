@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import "https://fonts.googleapis.com/css?family=Raleway|Oswald";
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5761,7 +5762,10 @@ button.close {
 *, *::before, *::after {
   box-sizing: border-box; }
 
-img {
-  max-width: 100%; }
+body {
+  font-family: 'Raleway', sans-serif; }
+
+h1 {
+  font-family: 'Oswald', sans-serif; }
 
 /*# sourceMappingURL=app.css.map */
