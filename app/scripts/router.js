@@ -9,7 +9,8 @@ var LoginContainer = require('./components/login.jsx').LoginContainer;
 
 var AppRouter = Backbone.Router.extend({
   routes: {
-    '': 'index'
+    '': 'index',
+    'syndicate/listall': 'syndicateList'
   },
 
   initialize: function(){
@@ -19,6 +20,13 @@ var AppRouter = Backbone.Router.extend({
   index: function(){
     ReactDOM.render(
       React.createElement(LoginContainer),
+      document.getElementById('app')
+    );
+  },
+
+  syndicateList: function(){
+    ReactDOM.render(
+      React.createElement(),
       document.getElementById('app')
     );
   }
