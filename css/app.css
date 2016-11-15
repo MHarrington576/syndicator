@@ -5772,4 +5772,12 @@ h1 {
 h4 {
   text-align: center; }
 
+.navbar {
+  text-align: center; }
+
+.well {
+  padding-top: 0;
+  margin-bottom: 0;
+  border-radius: 0; }
+
 /*# sourceMappingURL=app.css.map */
