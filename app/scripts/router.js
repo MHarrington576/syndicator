@@ -6,6 +6,7 @@ var ReactDOM = require('react-dom');
 // Local dependencies
 var setUpParse = require('./parseUtilities').setUpParse;
 var LoginContainer = require('./components/login.jsx').LoginContainer;
+var SyndicateListContainer = require('./components/syndicateList.jsx').SyndicateListContainer;
 
 var AppRouter = Backbone.Router.extend({
   routes: {
@@ -26,7 +27,7 @@ var AppRouter = Backbone.Router.extend({
 
   syndicateList: function(){
     ReactDOM.render(
-      React.createElement(),
+      React.createElement(SyndicateListContainer),
       document.getElementById('app')
     );
   }
