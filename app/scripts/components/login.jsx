@@ -1,5 +1,7 @@
 var React = require('react');
+
 var User = require('../models/models').User;
+var MainHeader = require('./templates/header.jsx').MainHeader;
 
 var SignUpForm = React.createClass({
   getInitialState: function(){
@@ -116,6 +118,11 @@ var LoginContainer = React.createClass({
   render: function(){
     return (
 
+    <div>
+      <div className="well">
+        <h1>Syndicator</h1>
+        <h4>A customizable team management system</h4>
+      </div>
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-3 col-xs-6">
@@ -126,6 +133,7 @@ var LoginContainer = React.createClass({
           </div>
         </div>
       </div>
+    </div>
 
     )
   }
