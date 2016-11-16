@@ -1,7 +1,7 @@
 var Backbone = require('backbone');
 
-var SyndicateSelection = Backbone.model.extend({
-  
+var SyndicateSelection = Backbone.Model.extend({
+
 });
 
 var User = Backbone.Model.extend({
