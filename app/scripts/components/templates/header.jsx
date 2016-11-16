@@ -3,12 +3,6 @@ var React = require('react');
 function MainHeader(props){
   return (
 
-    // <nav>
-    //   <div className="container-fluid"
-    //   <h1>Syndicator</h1>
-    //   <h4>A customizable team management system</h4>
-    // </nav>
-
     <nav className="navbar navbar-default">
       <div className="container-fluid">
         <div className="navbar-header">
@@ -22,15 +16,12 @@ function MainHeader(props){
 
         <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul className="nav navbar-nav">
+            // Begin custom input here
             <li>
               <h1>Syndicator</h1>
             </li>
-            <br />
-            <li>
-              <h4>A customizable team management system</h4>
-            </li>
+            //End custom input here
           </ul>
-
         </div>
       </div>
     </nav>

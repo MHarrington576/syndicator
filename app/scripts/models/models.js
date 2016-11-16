@@ -1,5 +1,9 @@
 var Backbone = require('backbone');
 
+var SyndicateSelection = Backbone.model.extend({
+  
+});
+
 var User = Backbone.Model.extend({
   idAttribute: 'objectId',
   urlRoot: 'https://shadow-of-the-colossus-server.herokuapp.com/users',
