@@ -31,6 +31,13 @@ var User = Backbone.Model.extend({
     this.save().then(function(data){
       localStorage.setItem('user', JSON.stringify(self.toJSON()));
     });
+
+    var loginUrl = 'https://shadow-of-the-colossus-server.herokuapp.com/' + 'login?username=' + encodeURI(username) + '&password=' + encodeURI(password);
+
+    $.ajax(loginUrl).then(function(response){
+      localStorage.setItem('token', response.sessionToken);
+      Backbone.history.navigate('user/create', {trigger: true});
+    });
   },
 
   signIn: function(username, password){
