@@ -1,7 +1,18 @@
 var Backbone = require('backbone');
 
-var SyndicateSelection = Backbone.Model.extend({
+var SyndicateToSelect = Backbone.Model.extend({
+  idAttribute: 'objectId',
+  defaults: {
+    name: '',
+    description: '',
+    icon: '',
+    memberCount: 0
+  }
+});
 
+var SyndicateToSelectCollection = Backbone.Collection.extend({
+  model: SyndicateToSelect,
+  baseUrl: 'https://shadow-of-the-colossus-server.herokuapp.com/classes/Syndicates'
 });
 
 var User = Backbone.Model.extend({
@@ -28,7 +39,7 @@ var User = Backbone.Model.extend({
 
     $.ajax(loginUrl).then(function(response){
       localStorage.setItem('token', response.sessionToken);
-      Backbone.history.navigate('syndicate/listall/', {trigger: true});
+      Backbone.history.navigate('user/listsyndicates', {trigger: true});
     });
   }
 });

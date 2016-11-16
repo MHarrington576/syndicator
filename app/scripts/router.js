@@ -11,7 +11,7 @@ var SyndicateListContainer = require('./components/syndicateList.jsx').Syndicate
 var AppRouter = Backbone.Router.extend({
   routes: {
     '': 'index',
-    'syndicate/listall': 'syndicateList'
+    'user/listsyndicates': 'syndicateList'
   },
 
   initialize: function(){
