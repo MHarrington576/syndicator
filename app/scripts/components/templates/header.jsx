@@ -20,6 +20,9 @@ function MainHeader(props){
             <li>
               <h1>Syndicator</h1>
             </li>
+            <li>
+              <a href="#">Profile</a>
+            </li>
             //End custom input here
           </ul>
         </div>
