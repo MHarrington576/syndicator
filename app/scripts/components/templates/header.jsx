@@ -23,6 +23,9 @@ function MainHeader(props){
             <li>
               <a href="#">Profile</a>
             </li>
+            <li>
+              <a href="#">Settings</a>
+            </li>
             //End custom input here
           </ul>
         </div>
