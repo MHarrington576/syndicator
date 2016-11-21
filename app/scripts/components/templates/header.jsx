@@ -32,6 +32,9 @@ function MainHeader(props){
             <li>
               <a href="#">Syndicates</a>
             </li>
+            <li>
+              <a href="#">Options</a>
+            </li>
             //End custom input here
           </ul>
         </div>
