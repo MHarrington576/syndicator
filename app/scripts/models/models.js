@@ -46,7 +46,7 @@ var User = Backbone.Model.extend({
 
     $.ajax(loginUrl).then(function(response){
       localStorage.setItem('token', response.sessionToken);
-      Backbone.history.navigate('user/listsyndicates', {trigger: true});
+      Backbone.history.navigate('user/create', {trigger: true});
     });
   }
 });

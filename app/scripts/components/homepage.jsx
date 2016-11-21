@@ -1,7 +1,9 @@
+var Backbone = require('backbone');
 var React = require('react');
 
 var User = require('../models/models').User;
-var MainHeader = require('./templates/header.jsx').MainHeader;
+require('../router');
+// var MainHeader = require('./templates/header.jsx').MainHeader;
 
 var SignUpForm = React.createClass({
   getInitialState: function(){
