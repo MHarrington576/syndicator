@@ -98,7 +98,7 @@ var LoginForm = React.createClass({
   }
 });
 
-var LoginContainer = React.createClass({
+var HomepageContainer = React.createClass({
   getInitialState: function(){
     return {
       user: new User()
@@ -140,5 +140,5 @@ var LoginContainer = React.createClass({
 });
 
 module.exports = {
-  LoginContainer: LoginContainer
+  HomepageContainer: HomepageContainer
 };

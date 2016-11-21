@@ -21,19 +21,19 @@ function MainHeader(props){
               <h1>Syndicator</h1>
             </li>
             <li>
-              <a href="#">Profile</a>
+              <a href="#">Headquarters</a>
             </li>
             <li>
-              <a href="#">Settings</a>
+              <a href="#">Messages</a>
             </li>
             <li>
-              <a href="#">Home</a>
+              <a href="#">Calendar</a>
             </li>
             <li>
-              <a href="#">Syndicates</a>
+              <a href="#">Travel</a>
             </li>
             <li>
-              <a href="#">Options</a>
+              <a href="#">Dossier</a>
             </li>
             //End custom input here
           </ul>

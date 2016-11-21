@@ -27,7 +27,7 @@ var List = React.createClass({
   }
 });
 
-var SyndicateListContainer = React.createClass({
+var SyndicateList = React.createClass({
   getInitialState: function(){
     return {
       syndicateList: new models.SyndicateToSelectCollection
@@ -45,9 +45,6 @@ var SyndicateListContainer = React.createClass({
     return (
 
       <div>
-        <div className="well">
-          <h1>Syndicator</h1>
-        </div>
         <List syndicates={this.state.syndicateList} />
       </div>
 
@@ -56,5 +53,5 @@ var SyndicateListContainer = React.createClass({
 });
 
 module.exports = {
-  SyndicateListContainer: SyndicateListContainer
+  SyndicateList: SyndicateList
 };

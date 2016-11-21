@@ -5,24 +5,24 @@ var ReactDOM = require('react-dom');
 
 // Local dependencies
 var setUpParse = require('./parseUtilities').setUpParse;
-var LoginContainer = require('./components/login.jsx').LoginContainer;
-var SyndicateListContainer = require('./components/syndicateList.jsx').SyndicateListContainer;
+var HomepageContainer = require('./components/homepage.jsx').HomepageContainer;
 var UserCreationContainer = require('./components/createUser.jsx').UserCreationContainer;
+// var DashboardContainer = require('./components/dashboard.jsx').DashboardContainer;
 
 var AppRouter = Backbone.Router.extend({
   routes: {
-    '': 'index',
+    '': 'homepage',
     'user/create': 'createUser',
-    'user/listsyndicates': 'syndicateList'
+    'user/dashboard': 'dashboard'
   },
 
   initialize: function(){
     setUpParse('tiyfeefall2016', 'parietinaeumbra');
   },
 
-  index: function(){
+  homepage: function(){
     ReactDOM.render(
-      React.createElement(LoginContainer),
+      React.createElement(HomepageContainer),
       document.getElementById('app')
     );
   },
@@ -34,12 +34,12 @@ var AppRouter = Backbone.Router.extend({
     );
   },
 
-  syndicateList: function(){
-    ReactDOM.render(
-      React.createElement(SyndicateListContainer),
-      document.getElementById('app')
-    );
-  }
+  // dashboard: function(){
+  //   ReactDOM.render(
+  //     React.createElement(DashboardContainer),
+  //     document.getElementById('app')
+  //   );
+  // }
 });
 
 // Instantiate the router
