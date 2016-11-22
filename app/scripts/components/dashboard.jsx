@@ -1,6 +1,7 @@
 var React = require('react');
 
 var models = require('../models/models');
+var MainNav = require('./templates/navbar.jsx').MainNav;
 
 var ListItem = React.createClass({
   render: function(){
@@ -45,6 +46,7 @@ var SyndicateList = React.createClass({
     return (
 
       <div>
+        <MainNav />
         <List syndicates={this.state.syndicateList} />
       </div>
 

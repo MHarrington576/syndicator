@@ -24,11 +24,6 @@ var UserCreationContainer = React.createClass({
               </div>
 
               <div className="form-group">
-                <label htmlFor="company-input">Company</label>
-                <input className="form-control" id="company-input" type="text" name="company" />
-              </div>
-
-              <div className="form-group">
                 <label htmlFor="email-input">Email</label>
                 <input className="form-control" id="email-input" type="email" name="email" placeholder="example@test.com" />
               </div>

@@ -1,6 +1,6 @@
 var React = require('react');
 
-function MainHeader(props){
+function MainNav(props){
   return (
 
     <nav className="navbar navbar-default">
@@ -21,19 +21,34 @@ function MainHeader(props){
               <h1>Syndicator</h1>
             </li>
             <li>
+              <i class="fa fa-university" aria-hidden="true"></i>
+              // <br />
               <a href="#">Headquarters</a>
             </li>
             <li>
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              // <br />
+              <a href="#">Agenda</a>
+            </li>
+            <li>
+              <i class="fa fa-commenting-o" aria-hidden="true"></i>
+              // <br />
               <a href="#">Messages</a>
             </li>
             <li>
-              <a href="#">Calendar</a>
+              <i class="fa fa-globe" aria-hidden="true"></i>
+              // <br />
+              <a href="#">Deployment</a>
             </li>
             <li>
-              <a href="#">Travel</a>
-            </li>
-            <li>
+              <i class="fa fa-address-card-o" aria-hidden="true"></i>
+              // <br />
               <a href="#">Dossier</a>
+            </li>
+            <li>
+              <i class="fa fa-lock" aria-hidden="true"></i>
+              // <br />
+              <button className="btn btn-danger">Log Out</button>
             </li>
             //End custom input here
           </ul>
@@ -45,5 +60,5 @@ function MainHeader(props){
 }
 
 module.exports = {
-  MainHeader: MainHeader
+  MainNav: MainNav
 };
