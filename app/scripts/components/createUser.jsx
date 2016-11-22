@@ -27,11 +27,11 @@ var CreateUserForm = React.createClass({
             <div className="form-group">
               <label htmlFor="team-code-input">'Are you joining an existing Syndicate? Or starting your own?'</label>
               <br />
-              <input class="radio-button" type="radio" name="join-option" /><span> Joining a Syndicate</span>
+              <input className="radio-button" type="radio" name="join-option" /><span> Joining a Syndicate</span>
               <br />
               <input className="form-control" id="code-input" type="text" name="code" placeholder="aBc123XyZ" />
               <br />
-              <input class="radio-button" type="radio" name="join-option" /><span> Creating a Syndicate</span>
+              <input className="radio-button" type="radio" name="join-option" /><span> Creating a Syndicate</span>
             </div>
 
             <input className="btn btn-info" type="submit" name="submit" value="Create Account" />
