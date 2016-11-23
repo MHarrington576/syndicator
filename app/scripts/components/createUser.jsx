@@ -1,12 +1,16 @@
 var React = require('react');
 
 var CreateUserForm = React.createClass({
+  handleSubmit: function(){
+
+  },
+  
   render: function(){
     return (
 
       <div className="row">
         <div className="col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-          <form id="user-creation-form" encType="multipart/form-data/">
+          <form id="user-creation-form" encType="multipart/form-data/" onSubmit={this.handleSubmit}>
 
             <div className="form-group">
               <label htmlFor="first-name-input">Name</label>
