@@ -3,6 +3,7 @@ var React = require('react');
 var CreateUserForm = React.createClass({
   handleSubmit: function(){
     var x;
+    var y;
   },
 
   render: function(){
