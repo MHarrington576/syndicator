@@ -4,6 +4,7 @@ var CreateUserForm = React.createClass({
   handleSubmit: function(){
     var x;
     var y;
+    var z;
   },
 
   render: function(){
