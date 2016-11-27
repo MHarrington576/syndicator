@@ -5,6 +5,7 @@ var CreateUserForm = React.createClass({
     var x;
     var y;
     var z;
+    var alpha;
   },
 
   render: function(){
