@@ -15,7 +15,12 @@ var AppRouter = Backbone.Router.extend({
     '': 'homepage',
     'testing': 'testing',
     'user/create': 'createUser',
-    'user/dashboard': 'dashboard'
+    'user/dashboard': 'dashboard',
+    'syndicate/hq': 'headquarters',
+    'syndicate/agenda': 'agenda',
+    'syndicate/dossier/messages': 'messages',
+    'syndicate/exec/deployment': 'deployment',
+    'syndicate/dossier': 'dossier'
   },
 
   initialize: function(){
@@ -41,14 +46,51 @@ var AppRouter = Backbone.Router.extend({
       React.createElement(UserCreationContainer),
       document.getElementById('app')
     );
-  },
+  }
+  // ,
 
   // dashboard: function(){
   //   ReactDOM.render(
   //     React.createElement(DashboardContainer),
   //     document.getElementById('app')
   //   );
+  // },
+  //
+  // headquarters: function(){
+  //   ReactDOM.render(
+  //     React.createElement(HeadquartersContainer),
+  //     document.getElementById('app')
+  //   );
+  // },
+  //
+  // agenda: function(){
+  //   ReactDOM.render(
+  //     React.createElement(AgendaContainer),
+  //     document.getElementById('app')
+  //   );
+  // },
+  //
+  // messages: function(){
+  //   ReactDOM.render(
+  //     React.createElement(MessagesContainer),
+  //     document.getElementById('app')
+  //   );
+  // },
+  //
+  // deployment: function(){
+  //   ReactDOM.render(
+  //     React.createElement(DeploymentContainer),
+  //     document.getElementById('app')
+  //   );
+  // },
+  //
+  // dossier: function(){
+  //   ReactDOM.render(
+  //     React.createElement(DossierContainer),
+  //     document.getElementById('app')
+  //   );
   // }
+
 });
 
 // Instantiate the router

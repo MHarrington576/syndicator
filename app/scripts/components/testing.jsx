@@ -8,8 +8,7 @@ var TestingComponent = React.createClass({
 
       <div>
         <MainNav />
-
-        <a href="" className="btn btn-primary">BACK TO HOME</a>
+        
       </div>
 
     );

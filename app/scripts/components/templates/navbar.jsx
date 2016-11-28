@@ -54,6 +54,13 @@ function MainNav(props){
             </li>
             <li>
               <a href="" className="navbar-link">
+                <i className="fa fa-sign-out fa-2x" aria-hidden="true"></i>
+                <br />
+                <span>Exit Syndicate</span>
+              </a>
+            </li>
+            <li>
+              <a href="" className="navbar-link">
                 <i className="fa fa-lock fa-2x" aria-hidden="true"></i>
                 <br />
                 <span>Log Out</span>

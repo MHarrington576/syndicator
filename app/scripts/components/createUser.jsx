@@ -2,7 +2,7 @@ var React = require('react');
 
 var CreateUserForm = React.createClass({
   handleSubmit: function(){
-    
+
   },
 
   render: function(){
@@ -24,12 +24,12 @@ var CreateUserForm = React.createClass({
             </div>
 
             <div className="form-group">
-              <label htmlFor="email-input">Email</label>
+              <label htmlFor="email-input">Confirm Email</label>
               <input className="form-control" id="email-input" type="email" name="email" placeholder="example@test.com" />
             </div>
 
             <div className="form-group">
-              <label htmlFor="team-code-input">'Are you joining an existing Syndicate? Or starting your own?'</label>
+              <label htmlFor="team-code-input">Are you joining an existing Syndicate&#63; Or starting your own&#63;</label>
               <br />
               <input className="radio-button" type="radio" name="join-option" /><span> Joining a Syndicate</span>
               <br />
