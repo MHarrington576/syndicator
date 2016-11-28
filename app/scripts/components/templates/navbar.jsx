@@ -15,42 +15,50 @@ function MainNav(props){
         </div>
 
         <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul className="nav navbar-nav">
-            // Begin custom input here
+          <h1 id="navbar-logo">Syndicator</h1>
+          <ul className="nav navbar-nav all-navbar-links">
             <li>
-              <h1>Syndicator</h1>
+              <a href="" className="navbar-link">
+                <i className="fa fa-university fa-2x" aria-hidden="true"></i>
+                <br />
+                <span>Headquarters</span>
+              </a>
             </li>
             <li>
-              <i class="fa fa-university" aria-hidden="true"></i>
-              // <br />
-              <a href="#">Headquarters</a>
+              <a href="" className="navbar-link">
+                <i className="fa fa-calendar fa-2x" aria-hidden="true"></i>
+                <br />
+                <span>Agenda</span>
+              </a>
             </li>
             <li>
-              <i class="fa fa-calendar" aria-hidden="true"></i>
-              // <br />
-              <a href="#">Agenda</a>
+              <a href="" className="navbar-link">
+                <i className="fa fa-commenting-o fa-2x" aria-hidden="true"></i>
+                <br />
+                <span>Messages</span>
+              </a>
             </li>
             <li>
-              <i class="fa fa-commenting-o" aria-hidden="true"></i>
-              // <br />
-              <a href="#">Messages</a>
+              <a href="" className="navbar-link">
+                <i className="fa fa-globe fa-2x" aria-hidden="true"></i>
+                <br />
+                <span>Deployment</span>
+              </a>
             </li>
             <li>
-              <i class="fa fa-globe" aria-hidden="true"></i>
-              // <br />
-              <a href="#">Deployment</a>
+              <a href="" className="navbar-link">
+                <i className="fa fa-address-card-o fa-2x" aria-hidden="true"></i>
+                <br />
+                <span>Dossier</span>
+              </a>
             </li>
             <li>
-              <i class="fa fa-address-card-o" aria-hidden="true"></i>
-              // <br />
-              <a href="#">Dossier</a>
+              <a href="" className="navbar-link">
+                <i className="fa fa-lock fa-2x" aria-hidden="true"></i>
+                <br />
+                <span>Log Out</span>
+              </a>
             </li>
-            <li>
-              <i class="fa fa-lock" aria-hidden="true"></i>
-              // <br />
-              <button className="btn btn-danger">Log Out</button>
-            </li>
-            //End custom input here
           </ul>
         </div>
       </div>

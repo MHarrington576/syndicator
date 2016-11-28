@@ -5,6 +5,7 @@ var ReactDOM = require('react-dom');
 
 // Local dependencies
 var setUpParse = require('./parseUtilities').setUpParse;
+var TestingComponent = require('./components/testing.jsx').TestingComponent;
 var HomepageContainer = require('./components/homepage.jsx').HomepageContainer;
 var UserCreationContainer = require('./components/createUser.jsx').UserCreationContainer;
 // var DashboardContainer = require('./components/dashboard.jsx').DashboardContainer;
@@ -12,6 +13,7 @@ var UserCreationContainer = require('./components/createUser.jsx').UserCreationC
 var AppRouter = Backbone.Router.extend({
   routes: {
     '': 'homepage',
+    'testing': 'testing',
     'user/create': 'createUser',
     'user/dashboard': 'dashboard'
   },
@@ -23,6 +25,13 @@ var AppRouter = Backbone.Router.extend({
   homepage: function(){
     ReactDOM.render(
       React.createElement(HomepageContainer),
+      document.getElementById('app')
+    );
+  },
+
+  testing: function(){
+    ReactDOM.render(
+      React.createElement(TestingComponent),
       document.getElementById('app')
     );
   },
