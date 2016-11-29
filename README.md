@@ -1,7 +1,7 @@
 # Syndicator
-##### by Matthew D. Harrington
-
 ### A customizable team-management software specifically conducive to data sharing, event planning, and internal communications.
+
+#### by Matthew D. Harrington
 
 Under Construction at: https://mharrington576.github.io/syndicator/
 
