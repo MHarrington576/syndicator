@@ -2,6 +2,7 @@ var React = require('react');
 
 var models = require('../models/models');
 var MainNav = require('./templates/navbar.jsx').MainNav;
+var LogOutNav = require('./templates/logOutNav.jsx').LogOutNav;
 
 var ListItem = React.createClass({
   render: function(){
@@ -29,25 +30,26 @@ var List = React.createClass({
 });
 
 var DashboardContainer = React.createClass({
-  getInitialState: function(){
-    return {
-      syndicateList: new models.SyndicateToSelectCollection
-    };
-  },
-
-  componentWillMount: function(){
-    var syndicateList = this.state.syndicateList;
-    syndicateList.fetch().then(function(response){
-      this.setState({syndicateList: response.results});
-    });
-  },
+  // getInitialState: function(){
+  //   return {
+  //     syndicateList: new models.SyndicateToSelectCollection
+  //   };
+  // },
+  //
+  // componentWillMount: function(){
+  //   var syndicateList = this.state.syndicateList;
+  //   syndicateList.fetch().then(function(response){
+  //     this.setState({syndicateList: response.results});
+  //   });
+  // },
 
   render: function(){
     return (
 
       <div>
         <MainNav />
-        <List syndicates={this.state.syndicateList} />
+        <h2>The War Room</h2>
+        <h3>Your Syndicates:</h3>
       </div>
 
     );

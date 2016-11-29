@@ -8,7 +8,12 @@ var setUpParse = require('./parseUtilities').setUpParse;
 var TestingComponent = require('./components/testing.jsx').TestingComponent;
 var HomepageContainer = require('./components/homepage.jsx').HomepageContainer;
 var UserCreationContainer = require('./components/createUser.jsx').UserCreationContainer;
-// var DashboardContainer = require('./components/dashboard.jsx').DashboardContainer;
+var DashboardContainer = require('./components/dashboard.jsx').DashboardContainer;
+var HQContainer = require('./components/headquarters.jsx').HQContainer;
+var AgendaContainer = require('./components/agenda.jsx').AgendaContainer;
+var MessagesContainer = require('./components/messages.jsx').MessagesContainer;
+var DeploymentContainer = require('./components/deployment.jsx').DeploymentContainer;
+var DossierContainer = require('./components/dossier.jsx').DossierContainer;
 
 var AppRouter = Backbone.Router.extend({
   routes: {
@@ -46,50 +51,49 @@ var AppRouter = Backbone.Router.extend({
       React.createElement(UserCreationContainer),
       document.getElementById('app')
     );
-  }
-  // ,
+  },
 
-  // dashboard: function(){
-  //   ReactDOM.render(
-  //     React.createElement(DashboardContainer),
-  //     document.getElementById('app')
-  //   );
-  // },
-  //
-  // headquarters: function(){
-  //   ReactDOM.render(
-  //     React.createElement(HeadquartersContainer),
-  //     document.getElementById('app')
-  //   );
-  // },
-  //
-  // agenda: function(){
-  //   ReactDOM.render(
-  //     React.createElement(AgendaContainer),
-  //     document.getElementById('app')
-  //   );
-  // },
-  //
-  // messages: function(){
-  //   ReactDOM.render(
-  //     React.createElement(MessagesContainer),
-  //     document.getElementById('app')
-  //   );
-  // },
-  //
-  // deployment: function(){
-  //   ReactDOM.render(
-  //     React.createElement(DeploymentContainer),
-  //     document.getElementById('app')
-  //   );
-  // },
-  //
-  // dossier: function(){
-  //   ReactDOM.render(
-  //     React.createElement(DossierContainer),
-  //     document.getElementById('app')
-  //   );
-  // }
+  dashboard: function(){
+    ReactDOM.render(
+      React.createElement(DashboardContainer),
+      document.getElementById('app')
+    );
+  },
+
+  headquarters: function(){
+    ReactDOM.render(
+      React.createElement(HQContainer),
+      document.getElementById('app')
+    );
+  },
+
+  agenda: function(){
+    ReactDOM.render(
+      React.createElement(AgendaContainer),
+      document.getElementById('app')
+    );
+  },
+
+  messages: function(){
+    ReactDOM.render(
+      React.createElement(MessagesContainer),
+      document.getElementById('app')
+    );
+  },
+
+  deployment: function(){
+    ReactDOM.render(
+      React.createElement(DeploymentContainer),
+      document.getElementById('app')
+    );
+  },
+
+  dossier: function(){
+    ReactDOM.render(
+      React.createElement(DossierContainer),
+      document.getElementById('app')
+    );
+  }
 
 });
 

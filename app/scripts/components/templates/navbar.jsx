@@ -18,45 +18,45 @@ function MainNav(props){
           <h1 id="navbar-logo">Syndicator</h1>
           <ul className="nav navbar-nav all-navbar-links">
             <li>
-              <a href="" className="navbar-link">
+              <a href="#syndicate/hq" className="navbar-link">
                 <i className="fa fa-university fa-2x" aria-hidden="true"></i>
                 <br />
                 <span>Headquarters</span>
               </a>
             </li>
             <li>
-              <a href="" className="navbar-link">
+              <a href="#syndicate/agenda" className="navbar-link">
                 <i className="fa fa-calendar fa-2x" aria-hidden="true"></i>
                 <br />
                 <span>Agenda</span>
               </a>
             </li>
             <li>
-              <a href="" className="navbar-link">
+              <a href="#syndicate/dossier/messages" className="navbar-link">
                 <i className="fa fa-commenting-o fa-2x" aria-hidden="true"></i>
                 <br />
                 <span>Messages</span>
               </a>
             </li>
             <li>
-              <a href="" className="navbar-link">
+              <a href="#syndicate/exec/deployment" className="navbar-link">
                 <i className="fa fa-globe fa-2x" aria-hidden="true"></i>
                 <br />
                 <span>Deployment</span>
               </a>
             </li>
             <li>
-              <a href="" className="navbar-link">
+              <a href="#syndicate/dossier" className="navbar-link">
                 <i className="fa fa-address-card-o fa-2x" aria-hidden="true"></i>
                 <br />
                 <span>Dossier</span>
               </a>
             </li>
             <li>
-              <a href="" className="navbar-link">
-                <i className="fa fa-sign-out fa-2x" aria-hidden="true"></i>
+              <a href="#user/dashboard" className="navbar-link">
+                <i className="fa fa-tasks fa-2x" aria-hidden="true"></i>
                 <br />
-                <span>Exit Syndicate</span>
+                <span>War Room</span>
               </a>
             </li>
             <li>

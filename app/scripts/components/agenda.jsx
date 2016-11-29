@@ -2,12 +2,13 @@ var React = require('react');
 
 var MainNav = require('./templates/navbar.jsx').MainNav;
 
-var TestingComponent = React.createClass({
+var AgendaContainer = React.createClass({
   render: function(){
     return (
 
       <div>
         <MainNav />
+        <h2>Syndicate Agenda</h2>
 
       </div>
 
@@ -16,5 +17,5 @@ var TestingComponent = React.createClass({
 });
 
 module.exports = {
-  TestingComponent: TestingComponent
+  AgendaContainer: AgendaContainer
 };

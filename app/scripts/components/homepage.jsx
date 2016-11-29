@@ -3,7 +3,6 @@ var React = require('react');
 
 var User = require('../models/models').User;
 require('../router');
-// var MainHeader = require('./templates/header.jsx').MainHeader;
 
 var SignUpForm = React.createClass({
   getInitialState: function(){
@@ -125,7 +124,7 @@ var HomepageContainer = React.createClass({
         <h1>Syndicator</h1>
         <h4>A customizable team management system</h4>
       </div>
-      <div className="container-fluid">
+      <div>
         <div className="row">
           <div className="col-md-3 col-xs-6">
             <h2>Log In</h2>
