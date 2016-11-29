@@ -5772,6 +5772,9 @@ h1 {
 h4 {
   text-align: center; }
 
+a:hover {
+  text-decoration: none; }
+
 .navbar {
   text-align: center; }
 
@@ -5785,4 +5788,5 @@ h4 {
   padding-top: 0;
   margin-bottom: 0;
   border-radius: 0; }
+
 /*# sourceMappingURL=app.css.map */
