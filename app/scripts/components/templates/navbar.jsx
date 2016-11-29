@@ -25,42 +25,49 @@ function MainNav(props){
               </a>
             </li>
             <li>
-              <a href="#syndicate/hq" className="navbar-link">
+              <a href="#syndicate/:id/hq" className="navbar-link">
                 <i className="fa fa-university fa-2x" aria-hidden="true"></i>
                 <br />
                 <span>Headquarters</span>
               </a>
             </li>
             <li>
-              <a href="#syndicate/agenda" className="navbar-link">
+              <a href="#syndicate/:id/agenda" className="navbar-link">
                 <i className="fa fa-calendar fa-2x" aria-hidden="true"></i>
                 <br />
                 <span>Agenda</span>
               </a>
             </li>
             <li>
-              <a href="#syndicate/dossier/messages" className="navbar-link">
-                <i className="fa fa-commenting-o fa-2x" aria-hidden="true"></i>
-                <br />
-                <span>Messages</span>
-              </a>
-            </li>
-            <li>
-              <a href="#syndicate/exec/deployment" className="navbar-link">
+              <a href="#syndicate/:id/exec/deployment" className="navbar-link exec">
                 <i className="fa fa-globe fa-2x" aria-hidden="true"></i>
                 <br />
                 <span>Deployment</span>
               </a>
             </li>
             <li>
-              <a href="#syndicate/user/dossier" className="navbar-link">
-                <i className="fa fa-address-card-o fa-2x" aria-hidden="true"></i>
+              <a href="#syndicate/:id/exec/roster" className="navbar-link exec">
+                <i className="fa fa-address-book-o fa-2x" aria-hidden="true"></i>
+                <br />
+                <span>Roster</span>
+              </a>
+            </li>
+            <li>
+              <a href="#syndicate/:id/user/:id/dossier" className="navbar-link">
+                <i className="fa fa-id-card-o fa-2x" aria-hidden="true"></i>
                 <br />
                 <span>Dossier</span>
               </a>
             </li>
             <li>
-              <a href="#user/war-room" className="navbar-link">
+              <a href="#user/:id/messages" className="navbar-link">
+                <i className="fa fa-commenting-o fa-2x" aria-hidden="true"></i>
+                <br />
+                <span>Messages</span>
+              </a>
+            </li>
+            <li>
+              <a href="#user/:id/war-room" className="navbar-link">
                 <i className="fa fa-tasks fa-2x" aria-hidden="true"></i>
                 <br />
                 <span>War Room</span>

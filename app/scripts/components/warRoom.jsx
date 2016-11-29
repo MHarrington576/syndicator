@@ -50,6 +50,22 @@ var WarRoomContainer = React.createClass({
         <MainNav />
         <h2>The War Room</h2>
         <h3>Your Syndicates:</h3>
+
+        <hr />
+
+        <a href="#user/:id/create-syndicate">
+          <i className="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
+          <br />
+          <span>Create a ne&#119; Syndicate</span>
+        </a>
+
+        <br />
+
+        <a href="#user/:id/war-room" className="open-modal">
+          <i className="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
+          <br />
+          <span>Join a Syndicate</span>
+        </a>
       </div>
 
     );

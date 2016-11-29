@@ -9,23 +9,27 @@ var TestingComponent = require('./components/testing.jsx').TestingComponent;
 var HomepageContainer = require('./components/homepage.jsx').HomepageContainer;
 var UserCreationContainer = require('./components/createUser.jsx').UserCreationContainer;
 var WarRoomContainer = require('./components/warRoom.jsx').WarRoomContainer;
+var CreateSyndicateContainer = require('./components/createSyndicate.jsx').CreateSyndicateContainer;
+var MessagesContainer = require('./components/messages.jsx').MessagesContainer;
 var HQContainer = require('./components/headquarters.jsx').HQContainer;
 var AgendaContainer = require('./components/agenda.jsx').AgendaContainer;
-var MessagesContainer = require('./components/messages.jsx').MessagesContainer;
 var DeploymentContainer = require('./components/deployment.jsx').DeploymentContainer;
 var DossierContainer = require('./components/dossier.jsx').DossierContainer;
+var RosterContainer = require('./components/roster.jsx').RosterContainer;
 
 var AppRouter = Backbone.Router.extend({
   routes: {
     '': 'homepage',
     'testing': 'testing',
     'user/create': 'createUser',
-    'user/war-room': 'warRoom',
-    'syndicate/hq': 'headquarters',
-    'syndicate/agenda': 'agenda',
-    'syndicate/dossier/messages': 'messages',
-    'syndicate/exec/deployment': 'deployment',
-    'syndicate/user/dossier': 'dossier'
+    'user/:id/war-room': 'warRoom',
+    'user/:id/create-syndicate': 'createSyndicate',
+    'user/:id/messages': 'messages',
+    'syndicate/:id/hq': 'headquarters',
+    'syndicate/:id/agenda': 'agenda',
+    'syndicate/:id/exec/roster': 'roster',
+    'syndicate/:id/exec/deployment': 'deployment',
+    'syndicate/:id/user/:id/dossier': 'dossier'
   },
 
   initialize: function(){
@@ -60,6 +64,20 @@ var AppRouter = Backbone.Router.extend({
     );
   },
 
+  createSyndicate: function(){
+    ReactDOM.render(
+      React.createElement(CreateSyndicateContainer),
+      document.getElementById('app')
+    );
+  },
+
+  messages: function(){
+    ReactDOM.render(
+      React.createElement(MessagesContainer),
+      document.getElementById('app')
+    );
+  },
+
   headquarters: function(){
     ReactDOM.render(
       React.createElement(HQContainer),
@@ -74,13 +92,6 @@ var AppRouter = Backbone.Router.extend({
     );
   },
 
-  messages: function(){
-    ReactDOM.render(
-      React.createElement(MessagesContainer),
-      document.getElementById('app')
-    );
-  },
-
   deployment: function(){
     ReactDOM.render(
       React.createElement(DeploymentContainer),
@@ -91,6 +102,13 @@ var AppRouter = Backbone.Router.extend({
   dossier: function(){
     ReactDOM.render(
       React.createElement(DossierContainer),
+      document.getElementById('app')
+    );
+  },
+
+  roster: function(){
+    ReactDOM.render(
+      React.createElement(RosterContainer),
       document.getElementById('app')
     );
   }

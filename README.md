@@ -4,7 +4,6 @@
 
 Under Construction at: https://mharrington576.github.io/syndicator/
 
-
 Written in HTML, CSS, and JavaScript with:
 * Font Awesome
 * SCSS
