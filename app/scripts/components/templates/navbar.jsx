@@ -18,6 +18,13 @@ function MainNav(props){
           <h1 id="navbar-logo">Syndicator</h1>
           <ul className="nav navbar-nav all-navbar-links">
             <li>
+              <a href="#testing" className="navbar-link">
+                <i className="fa fa-flask fa-2x" aria-hidden="true"></i>
+                <br />
+                <span>Testing</span>
+              </a>
+            </li>
+            <li>
               <a href="#syndicate/hq" className="navbar-link">
                 <i className="fa fa-university fa-2x" aria-hidden="true"></i>
                 <br />
@@ -46,14 +53,14 @@ function MainNav(props){
               </a>
             </li>
             <li>
-              <a href="#syndicate/dossier" className="navbar-link">
+              <a href="#syndicate/user/dossier" className="navbar-link">
                 <i className="fa fa-address-card-o fa-2x" aria-hidden="true"></i>
                 <br />
                 <span>Dossier</span>
               </a>
             </li>
             <li>
-              <a href="#user/dashboard" className="navbar-link">
+              <a href="#user/war-room" className="navbar-link">
                 <i className="fa fa-tasks fa-2x" aria-hidden="true"></i>
                 <br />
                 <span>War Room</span>

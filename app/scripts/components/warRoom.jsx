@@ -29,7 +29,7 @@ var List = React.createClass({
   }
 });
 
-var DashboardContainer = React.createClass({
+var WarRoomContainer = React.createClass({
   // getInitialState: function(){
   //   return {
   //     syndicateList: new models.SyndicateToSelectCollection
@@ -57,5 +57,5 @@ var DashboardContainer = React.createClass({
 });
 
 module.exports = {
-  DashboardContainer: DashboardContainer
+  WarRoomContainer: WarRoomContainer
 };

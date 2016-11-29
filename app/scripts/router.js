@@ -8,7 +8,7 @@ var setUpParse = require('./parseUtilities').setUpParse;
 var TestingComponent = require('./components/testing.jsx').TestingComponent;
 var HomepageContainer = require('./components/homepage.jsx').HomepageContainer;
 var UserCreationContainer = require('./components/createUser.jsx').UserCreationContainer;
-var DashboardContainer = require('./components/dashboard.jsx').DashboardContainer;
+var WarRoomContainer = require('./components/warRoom.jsx').WarRoomContainer;
 var HQContainer = require('./components/headquarters.jsx').HQContainer;
 var AgendaContainer = require('./components/agenda.jsx').AgendaContainer;
 var MessagesContainer = require('./components/messages.jsx').MessagesContainer;
@@ -20,12 +20,12 @@ var AppRouter = Backbone.Router.extend({
     '': 'homepage',
     'testing': 'testing',
     'user/create': 'createUser',
-    'user/dashboard': 'dashboard',
+    'user/war-room': 'warRoom',
     'syndicate/hq': 'headquarters',
     'syndicate/agenda': 'agenda',
     'syndicate/dossier/messages': 'messages',
     'syndicate/exec/deployment': 'deployment',
-    'syndicate/dossier': 'dossier'
+    'syndicate/user/dossier': 'dossier'
   },
 
   initialize: function(){
@@ -53,9 +53,9 @@ var AppRouter = Backbone.Router.extend({
     );
   },
 
-  dashboard: function(){
+  warRoom: function(){
     ReactDOM.render(
-      React.createElement(DashboardContainer),
+      React.createElement(WarRoomContainer),
       document.getElementById('app')
     );
   },
