@@ -66,7 +66,15 @@ var WarRoomContainer = React.createClass({
           <br />
           <span>Join a Syndicate</span>
         </a>
-      </div>
+
+        <br />
+
+        <a href="#user/:id/settings" className="open-modal">
+          <i className="fa fa-gear fa-2x" aria-hidden="true"></i>
+          <br />
+          <span>Your Settings</span>
+        </a>
+    </div>
 
     );
   }

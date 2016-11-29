@@ -10,6 +10,7 @@ var HomepageContainer = require('./components/homepage.jsx').HomepageContainer;
 var UserCreationContainer = require('./components/createUser.jsx').UserCreationContainer;
 var WarRoomContainer = require('./components/warRoom.jsx').WarRoomContainer;
 var CreateSyndicateContainer = require('./components/createSyndicate.jsx').CreateSyndicateContainer;
+var SettingsContainer = require('./components/settings.jsx').SettingsContainer;
 var MessagesContainer = require('./components/messages.jsx').MessagesContainer;
 var HQContainer = require('./components/headquarters.jsx').HQContainer;
 var AgendaContainer = require('./components/agenda.jsx').AgendaContainer;
@@ -25,10 +26,11 @@ var AppRouter = Backbone.Router.extend({
     'user/:id/war-room': 'warRoom',
     'user/:id/create-syndicate': 'createSyndicate',
     'user/:id/messages': 'messages',
-    'syndicate/:id/hq': 'headquarters',
+    'user/:id/settings': 'settings',
+    'syndicate/:id': 'headquarters',
     'syndicate/:id/agenda': 'agenda',
-    'syndicate/:id/exec/roster': 'roster',
     'syndicate/:id/exec/deployment': 'deployment',
+    'syndicate/:id/exec/roster': 'roster',
     'syndicate/:id/user/:id/dossier': 'dossier'
   },
 
@@ -78,6 +80,13 @@ var AppRouter = Backbone.Router.extend({
     );
   },
 
+  settings: function(){
+    ReactDOM.render(
+      React.createElement(SettingsContainer),
+      document.getElementById('app')
+    );
+  },
+
   headquarters: function(){
     ReactDOM.render(
       React.createElement(HQContainer),
@@ -99,16 +108,16 @@ var AppRouter = Backbone.Router.extend({
     );
   },
 
-  dossier: function(){
+  roster: function(){
     ReactDOM.render(
-      React.createElement(DossierContainer),
+      React.createElement(RosterContainer),
       document.getElementById('app')
     );
   },
 
-  roster: function(){
+  dossier: function(){
     ReactDOM.render(
-      React.createElement(RosterContainer),
+      React.createElement(DossierContainer),
       document.getElementById('app')
     );
   }

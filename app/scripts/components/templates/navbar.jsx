@@ -25,7 +25,7 @@ function MainNav(props){
               </a>
             </li>
             <li>
-              <a href="#syndicate/:id/hq" className="navbar-link">
+              <a href="#syndicate/:id" className="navbar-link">
                 <i className="fa fa-university fa-2x" aria-hidden="true"></i>
                 <br />
                 <span>Headquarters</span>

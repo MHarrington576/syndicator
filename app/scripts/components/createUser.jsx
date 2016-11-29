@@ -1,8 +1,18 @@
+var Backbone = require('backbone');
 var React = require('react');
 
 var CreateUserForm = React.createClass({
-  handleSubmit: function(){
-
+  handleSubmit: function(e){
+    e.preventDefault();
+    if (document.getElementById('create-option-btn').checked){
+      // Send data to Parse Server @ /classes/SyndicatorDossiers .then(vvv)
+      Backbone.history.navigate('user/:id/create-syndicate', {trigger: true});
+    } else if ((document.getElementById('join-option-btn').checked) && (document.getElementById('code-input') != null)){
+      // Send data to Parse Server and add User to selected Syndicate .then(vvv)
+      Backbone.history.navigate('syndicate/:id', {trigger: true});
+    } else {
+      alert ('Please select a choice below.');
+    };
   },
 
   render: function(){
@@ -32,11 +42,11 @@ var CreateUserForm = React.createClass({
               <div className="form-group">
                 <label htmlFor="team-code-input">Are you joining an existing Syndicate&#63; Or starting your own&#63;</label>
                 <br />
-                <input className="radio-button" type="radio" name="join-option" /><span> Joining a Syndicate</span>
+                <input className="radio-button" id="join-option-btn" type="radio" name="join-option" /><span> Joining a Syndicate</span>
                 <br />
                 <input className="form-control" id="code-input" type="text" name="code" placeholder="aBc123XyZ" />
                 <br />
-                <input className="radio-button" type="radio" name="join-option" /><span> Creating a Syndicate</span>
+                <input className="radio-button" id="create-option-btn" type="radio" name="join-option" /><span> Starting my own Syndicate</span>
               </div>
 
               <input className="btn btn-info" type="submit" name="submit" value="Create Account" />
