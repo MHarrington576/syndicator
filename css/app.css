@@ -5775,8 +5775,15 @@ h4 {
 .navbar {
   text-align: center; }
 
+.all-navbar-links {
+  float: right; }
+
+#navbar-logo {
+  float: left; }
+
 .well {
   padding-top: 0;
   margin-bottom: 0;
   border-radius: 0; }
+
 /*# sourceMappingURL=app.css.map */
