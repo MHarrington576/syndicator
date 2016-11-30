@@ -5,15 +5,27 @@ var AddAnnouncement = require('./templates/announcementModal.jsx').AddAnnounceme
 var Announcement = require('../models/announcement').Announcement;
 
 var HQContainer = React.createClass({
+  getInitialState: function(){
+    return {
+      announcement: new Announcement()
+    };
+  },
+
+  addNewAnnouncement: function(heading, body){
+    this.state.announcement.set({heading: heading, body: body});
+    this.state.announcement.postAnnouncement(heading, body);
+  },
+
   render: function(){
     return (
 
       <div>
         <MainNav />
+        <AddAnnouncement addNewAnnouncement={this.addNewAnnouncement}/>
 
         <aside className="col-sm-3 col-xs-12">
           <h2>Syndicate Name</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dol eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </aside>
 
         <div className="announcement-board col-sm-9 col-xs-12">
@@ -21,7 +33,6 @@ var HQContainer = React.createClass({
           <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#announcement-modal">
             <span>Add an Announcement</span>
           </button>
-          <AddAnnouncement />
           <br />
 
           <h3>This Is an Announcement</h3>

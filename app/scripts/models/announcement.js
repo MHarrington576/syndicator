@@ -6,10 +6,14 @@ var Announcement = Backbone.Model.extend({
 
   defaults: {
     heading: '',
-    announcerAvatarUrl: '',
-    announcer: '',
-    date: '',
     body: ''
+  },
+
+  postAnnouncement: function(heading, body){
+    var heading = this.get('heading');
+    var body = this.get('body');
+
+    this.save();
   }
 });
 

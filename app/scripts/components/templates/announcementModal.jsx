@@ -1,4 +1,5 @@
 var React = require('react');
+require('bootstrap-sass');
 
 // TO LAUNCH:
 // <button type="button" className="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
@@ -6,6 +7,31 @@ var React = require('react');
 // </button>
 
 var AddAnnouncementModal = React.createClass({
+  getInitialState: function(){
+    return {
+      heading: '',
+      body: ''
+    };
+  },
+
+  handleHeading: function(e){
+    e.preventDefault();
+    this.setState({heading: e.target.value});
+  },
+
+  handleBody: function(e){
+    e.preventDefault();
+    this.setState({body: e.target.value});
+  },
+
+  handleSubmit: function(e){
+    e.preventDefault();
+    var heading = this.state.heading;
+    var body = this.state.body;
+
+    this.props.addNewAnnouncement(heading, body);
+    this.setState({heading: '', body: ''});
+  },
   render: function(){
     return (
 
@@ -20,26 +46,25 @@ var AddAnnouncementModal = React.createClass({
             </div>
             <div className="modal-body">
 
-              <form id="syndicate-creation-form" encType="multipart/form-data/" onSubmit={self.handleSubmit} method="POST">
+              <form id="syndicate-creation-form" encType="multipart/form-data/" onSubmit={this.handleSubmit} method="POST">
 
                 <div className="form-group">
                   <label htmlFor="announcement-heading-input">Heading</label>
-                  <input className="form-control" id="announcement-heading-input" type="text" name="announcement-heading" required />
+                  <input className="form-control" id="announcement-heading-input" value={this.state.heading} onChange={this.handleHeading} type="text" name="announcement-heading" required />
                 </div>
 
                 <div className="form-group">
                   <label htmlFor="announcement-body-input">Announcement</label>
-                  <textarea className="form-control" id="announcement-body-input" type="text" name="announcement-body" required />
+                  <textarea className="form-control" id="announcement-body-input" value={this.state.body} onChange={this.handleBody} type="text" name="announcement-body" required />
                 </div>
 
-                <input className="btn btn-info" type="submit" name="submit" value="Create Syndicate" />
+                <input className="btn btn-info" type="submit" name="submit" value="Announce!" />
 
               </form>
 
             </div>
             <div className="modal-footer">
               <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" className="btn btn-primary">Save changes</button>
             </div>
           </div>
         </div>

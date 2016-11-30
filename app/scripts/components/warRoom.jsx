@@ -50,7 +50,7 @@ var WarRoomContainer = React.createClass({
         <h2>The War Room</h2>
         <h3>Your Syndicates:</h3>
 
-        <a href="#syndicate/hq">Test Syndicate</a>
+        <a href="#syndicate/:id">Test Syndicate</a>
 
         <hr />
 
