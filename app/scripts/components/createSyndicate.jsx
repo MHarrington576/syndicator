@@ -71,7 +71,7 @@ var SyndicateForm = React.createClass({
     var file = new FileModel();
     file.set('name', icon.name);
     file.set('data', icon);
-    file.save().done(() => {
+    file.save().done(function(){
       var newSyndicate = {
         name: this.state.name,
         description: this.state.description,
