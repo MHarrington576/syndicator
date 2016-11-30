@@ -11,6 +11,8 @@ Written in HTML-5, CSS-3, and JavaScript with:
 * npm.js
 * Backbone.js
 * React.js
+* Moment.js
+* FullCalendar.js
 
 Aided by the following:
 * Atom.io

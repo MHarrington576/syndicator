@@ -19,9 +19,9 @@ var File = Backbone.Model.extend({
 
     options.data = image;
     options.beforeSend = function(request){
-      request.setRequestHeader("X-Parse-Application-Id", 'tiyfeefall2016');
-      request.setRequestHeader("X-Parse-Rest-API-Key", 'parietinaeumbra');
-      request.setRequestHeader("Content-Type", image.type);
+      request.setRequestHeader('X-Parse-Application-Id', 'tiyfeefall2016');
+      request.setRequestHeader('X-Parse-Rest-API-Key', 'parietinaeumbra');
+      request.setRequestHeader('Content-Type', image.type);
     };
     options.processData = false;
     options.contentType = false;

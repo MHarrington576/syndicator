@@ -2,10 +2,6 @@ var React = require('react');
 
 var LimitedNav = require('./templates/limitedNav.jsx').LimitedNav;
 
-function randomCode(length){
-  Math.random().toString(16).slice(2);
-}
-
 var SyndicateForm = React.createClass({
   getInitialState: function(){
     var name = '';
@@ -68,15 +64,48 @@ var SyndicateForm = React.createClass({
     this.setState({collabCode: syndicateCollabCode});
   },
 
+  handleSubmit: function(e){
+    e.preventDefault();
+  },
+
   render: function(){
     return (
-      <div>
+
+      <div className="col-sm-5 col-xs-10">
+        <form id="syndicate-creation-form" encType="multipart/form-data/" onSubmit={this.handleSubmit}>
+
+          <div className="form-group">
+            <label htmlFor="syndicate-name-input">Syndicate Name</label>
+            <input className="form-control" id="syndicate-name-input" type="text" name="syndicate-name" required />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="syndicate-description-input">Description</label>
+            <textarea className="form-control" id="syndicate-description-input" type="text" name="syndicate-description" placeholder="What's this group all about?" required />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="icon-input">Icon</label>
+            <input className="form-control" id="icon-input" type="file" name="icon" />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="banner-input">Banner</label>
+            <input className="form-control" id="banner-input" type="file" name="banner" />
+          </div>
+
+          <input className="btn btn-info" type="submit" name="submit" value="Create Syndicate" />
+
+        </form>
+
+        <br />
+
         <p>Executive Code: <span className="code">{(Math.random() / 3.1415926535897932383).toString(36).toUpperCase().slice(18)}</span></p>
         <p>Sponsor Code: <span className="code">{(Math.random() / 3.1415926535897932383).toString(36).toUpperCase().slice(18)}</span></p>
         <p>Director Code: <span className="code">{(Math.random() / 3.1415926535897932383).toString(36).toUpperCase().slice(18)}</span></p>
         <p>Collaborator Code: <span className="code">{(Math.random() / 3.1415926535897932383).toString(36).toUpperCase().slice(18)}</span></p>
-
       </div>
+
     );
   }
 });

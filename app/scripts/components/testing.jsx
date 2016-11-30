@@ -20,6 +20,12 @@ var TestingComponent = React.createClass({
         <MainNav />
 
         <RandomString />
+
+        <ul>
+          <li><a href="#user/create">Create User</a></li>
+          <li><a href="#user/:id/create-syndicate">Create Syndicate</a></li>
+          <li><a href="#user/:id/settings">Settings</a></li>
+        </ul>
       </div>
 
     );
