@@ -5788,4 +5788,8 @@ a:hover {
   padding-top: 0;
   margin-bottom: 0;
   border-radius: 0; }
+
+.code {
+  font-family: monospace; }
+
 /*# sourceMappingURL=app.css.map */
