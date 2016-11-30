@@ -113,7 +113,7 @@ var HomepageContainer = React.createClass({
 
   logInUser: function(username, password){
     this.state.user.set({username: username, password: password});
-    this.state.user.signIn(username, password);
+    this.state.user.logIn(username, password);
   },
 
   render: function(){

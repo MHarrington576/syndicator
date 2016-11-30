@@ -11,12 +11,13 @@ Written in HTML-5, CSS-3, and JavaScript with:
 * npm.js
 * Backbone.js
 * React.js
-* Moment.js
-* FullCalendar.js
+<!-- * Moment.js -->
+<!-- * FullCalendar.js -->
 
 Aided by the following:
 * Atom.io
 * Heroku (https://heroku.com/)
 * Parse (https://parseplatform.github.io/)
-* Apiary.io
+<!-- * Apiary.io -->
 * Google Maps API (https://developers.google.com/maps/)
+* React \+ Google Maps (https://www.npmjs.com/package/google-maps-react)

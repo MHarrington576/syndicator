@@ -1,18 +1,7 @@
 var React = require('react');
+// var google = require('react-google-maps');
 
 var MainNav = require('./templates/navbar.jsx').MainNav;
-
-var NearbyMap = React.createClass({
-  render: function(){
-    return (
-
-      <div>
-        <span>Map</span>
-      </div>
-
-    );
-  }
-});
 
 var DeploymentContainer = React.createClass({
   render: function(){
@@ -22,7 +11,8 @@ var DeploymentContainer = React.createClass({
         <MainNav />
         <h2>Syndicate Deployment</h2>
 
-        <NearbyMap />
+        <span>MapTest</span>
+
       </div>
 
     );

@@ -25,13 +25,21 @@ var User = Backbone.Model.extend({
     });
   },
 
-  signIn: function(username, password){
+  logIn: function(username, password){
     var self = this;
     var loginUrl = 'https://shadow-of-the-colossus-server.herokuapp.com/' + 'login?username=' + encodeURI(username) + '&password=' + encodeURI(password);
 
     $.ajax(loginUrl).then(function(response){
       localStorage.setItem('token', response.sessionToken);
       Backbone.history.navigate('user/create', {trigger: true});
+    });
+  },
+
+  logOut: function(){
+    var logoutUrl = 'https://shadow-of-the-colossus-server.herokuapp.com/' + 'logout/';
+    $.post(logoutUrl).then(function(){
+      localStorage.clear();
+      Backbone.history.navigate('', {trigger: true});
     });
   }
 });

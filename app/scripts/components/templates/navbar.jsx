@@ -1,4 +1,5 @@
 var React = require('react');
+var User = require('../../models/user').User;
 
 function MainNav(props){
   return (

@@ -73,6 +73,7 @@
     ]
   },
   "dependencies": {
-    "fullcalendar": "^3.0.1"
+    "fullcalendar": "^3.0.1",
+    "google-maps-react": "^1.0.19"
   }
 }
