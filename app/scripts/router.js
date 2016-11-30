@@ -40,84 +40,84 @@ var AppRouter = Backbone.Router.extend({
 
   homepage: function(){
     ReactDOM.render(
-      React.createElement(HomepageContainer),
+      React.createElement(HomepageContainer, {router: this}),
       document.getElementById('app')
     );
   },
 
   testing: function(){
     ReactDOM.render(
-      React.createElement(TestingComponent),
+      React.createElement(TestingComponent, {router: this}),
       document.getElementById('app')
     );
   },
 
   createUser: function(){
     ReactDOM.render(
-      React.createElement(UserCreationContainer),
+      React.createElement(UserCreationContainer, {router: this}),
       document.getElementById('app')
     );
   },
 
   warRoom: function(){
     ReactDOM.render(
-      React.createElement(WarRoomContainer),
+      React.createElement(WarRoomContainer, {router: this}),
       document.getElementById('app')
     );
   },
 
   createSyndicate: function(){
     ReactDOM.render(
-      React.createElement(CreateSyndicateContainer),
+      React.createElement(CreateSyndicateContainer, {router: this}),
       document.getElementById('app')
     );
   },
 
   messages: function(){
     ReactDOM.render(
-      React.createElement(MessagesContainer),
+      React.createElement(MessagesContainer, {router: this}),
       document.getElementById('app')
     );
   },
 
   settings: function(){
     ReactDOM.render(
-      React.createElement(SettingsContainer),
+      React.createElement(SettingsContainer, {router: this}),
       document.getElementById('app')
     );
   },
 
   headquarters: function(){
     ReactDOM.render(
-      React.createElement(HQContainer),
+      React.createElement(HQContainer, {router: this}),
       document.getElementById('app')
     );
   },
 
   agenda: function(){
     ReactDOM.render(
-      React.createElement(AgendaContainer),
+      React.createElement(AgendaContainer, {router: this}),
       document.getElementById('app')
     );
   },
 
   deployment: function(){
     ReactDOM.render(
-      React.createElement(DeploymentContainer),
+      React.createElement(DeploymentContainer, {router: this}),
       document.getElementById('app')
     );
   },
 
   roster: function(){
     ReactDOM.render(
-      React.createElement(RosterContainer),
+      React.createElement(RosterContainer, {router: this}),
       document.getElementById('app')
     );
   },
 
   dossier: function(){
     ReactDOM.render(
-      React.createElement(DossierContainer),
+      React.createElement(DossierContainer, {router: this}),
       document.getElementById('app')
     );
   }

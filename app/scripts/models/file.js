@@ -1,6 +1,6 @@
 var Backbone = require('backbone');
 
-var File = Backbone.Model.extend({
+var FileModel = Backbone.Model.extend({
   defaults: {
     name: 'image.jpg'
   },
@@ -31,5 +31,5 @@ var File = Backbone.Model.extend({
 });
 
 module.exports = {
-  'File': File
+  FileModel: FileModel
 };

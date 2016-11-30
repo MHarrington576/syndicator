@@ -1,20 +1,5 @@
 var Backbone = require('backbone');
 
-var SyndicateToSelect = Backbone.Model.extend({
-  idAttribute: 'objectId',
-  defaults: {
-    name: '',
-    description: '',
-    icon: '',
-    memberCount: 0
-  }
-});
-
-var SyndicateToSelectCollection = Backbone.Collection.extend({
-  model: SyndicateToSelect,
-  baseUrl: 'https://shadow-of-the-colossus-server.herokuapp.com/classes/Syndicates'
-});
-
 var User = Backbone.Model.extend({
   idAttribute: 'objectId',
   urlRoot: 'https://shadow-of-the-colossus-server.herokuapp.com/users',

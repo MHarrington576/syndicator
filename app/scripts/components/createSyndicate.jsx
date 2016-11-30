@@ -1,6 +1,7 @@
 var React = require('react');
 
 var LimitedNav = require('./templates/limitedNav.jsx').LimitedNav;
+var FileModel = require('../models/file').FileModel;
 
 var SyndicateForm = React.createClass({
   getInitialState: function(){
@@ -45,38 +46,51 @@ var SyndicateForm = React.createClass({
   },
 
   setSyndicateExecCode: function(){
-    var syndicateExecCode = 1;
+    var syndicateExecCode = 'execCodeValue';
     this.setState({execCode: syndicateExecCode});
   },
 
   setSyndicateSponsCode: function(){
-    var syndicateSponsCode = 2;
+    var syndicateSponsCode = 'sponsCodeValue';
     this.setState({sponsCode: syndicateSponsCode});
   },
 
   setSyndicateDirCode: function(){
-    var syndicateDirCode = 3;
+    var syndicateDirCode = 'dirCodeValue';
     this.setState({dirCode: syndicateDirCode});
   },
 
   setSyndicateCollabCode: function(){
-    var syndicateCollabCode = 4;
+    var syndicateCollabCode = 'collabCodeValue';
     this.setState({collabCode: syndicateCollabCode});
   },
 
   handleSubmit: function(e){
     e.preventDefault();
+    var icon = document.getElementById('icon-input')[0].files[0];
+    var file = new FileModel();
+    file.set('name', icon.name);
+    file.set('data', icon);
+    file.save().done(() => {
+      var newSyndicate = {
+        name: this.state.name,
+        description: this.state.description,
+        icon: file.get('url')
+      };
+      this.props.handleSubmit(newSyndicate);
+    });
   },
 
   render: function(){
+    var self = this;
     return (
 
       <div className="col-sm-5 col-xs-10">
-        <form id="syndicate-creation-form" encType="multipart/form-data/" onSubmit={this.handleSubmit}>
+        <form id="syndicate-creation-form" encType="multipart/form-data/" onSubmit={self.handleSubmit} method="POST">
 
           <div className="form-group">
             <label htmlFor="syndicate-name-input">Syndicate Name</label>
-            <input className="form-control" id="syndicate-name-input" type="text" name="syndicate-name" required />
+            <input className="form-control" id="syndicate-name-input" type="text" name="syndicate-name" onChange={self.setSyndicateName} value={self.state.name} required />
           </div>
 
           <div className="form-group">

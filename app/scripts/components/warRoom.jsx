@@ -1,6 +1,6 @@
 var React = require('react');
 
-var models = require('../models/models');
+var models = require('../models/syndicate');
 var LimitedNav = require('./templates/limitedNav.jsx').LimitedNav;
 
 var ListItem = React.createClass({

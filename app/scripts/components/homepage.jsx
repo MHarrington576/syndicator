@@ -1,7 +1,7 @@
 var Backbone = require('backbone');
 var React = require('react');
 
-var User = require('../models/models').User;
+var User = require('../models/user').User;
 require('../router');
 
 var SignUpForm = React.createClass({
