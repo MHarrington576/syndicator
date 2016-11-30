@@ -1,14 +1,14 @@
 var React = require('react');
 
-var MainNav = require('./templates/navbar.jsx').MainNav;
+var LimitedNav = require('./templates/limitedNav.jsx').LimitedNav;
 
 var MessagesContainer = React.createClass({
   render: function(){
     return (
 
       <div>
-        <MainNav />
-        <h2>Syndicate Messages</h2>
+        <LimitedNav />
+        <h2>User Messages</h2>
       </div>
 
     );

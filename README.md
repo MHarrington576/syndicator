@@ -4,9 +4,10 @@
 
 Under Construction at: https://mharrington576.github.io/syndicator/
 
-Written in HTML, CSS, and JavaScript with:
+Written in HTML-5, CSS-3, and JavaScript with:
 * Font Awesome
 * SCSS
+* jQuery
 * npm.js
 * Backbone.js
 * React.js

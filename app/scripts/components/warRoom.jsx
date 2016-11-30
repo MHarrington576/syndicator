@@ -1,8 +1,7 @@
 var React = require('react');
 
 var models = require('../models/models');
-var MainNav = require('./templates/navbar.jsx').MainNav;
-var LogOutNav = require('./templates/logOutNav.jsx').LogOutNav;
+var LimitedNav = require('./templates/limitedNav.jsx').LimitedNav;
 
 var ListItem = React.createClass({
   render: function(){
@@ -47,7 +46,7 @@ var WarRoomContainer = React.createClass({
     return (
 
       <div>
-        <MainNav />
+        <LimitedNav />
         <h2>The War Room</h2>
         <h3>Your Syndicates:</h3>
 

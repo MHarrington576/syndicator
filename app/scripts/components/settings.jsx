@@ -1,13 +1,13 @@
 var React = require('react');
 
-var MainNav = require('./templates/navbar.jsx').MainNav;
+var LimitedNav = require('./templates/limitedNav.jsx').LimitedNav;
 
 var SettingsContainer = React.createClass({
   render: function(){
     return (
 
       <div>
-        <MainNav />
+        <LimitedNav />
         <h2>User Settings</h2>
       </div>
 
