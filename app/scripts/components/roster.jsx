@@ -25,17 +25,17 @@ var RosterContainer = React.createClass({
           <tbody>
             <tr>
               <th scope="row">1</th>
-              <td>Shane</td>
-              <td>Baxter</td>
-              <td>Executive</td>
-              <td><a href="#syndicate/:id/exec/roster">@sbaxter</a></td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
               <td>David</td>
               <td>Dejesa</td>
               <td>Executive</td>
               <td><a href="#syndicate/:id/exec/roster">@ddejesa</a></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Faith</td>
+              <td>Ingle</td>
+              <td>Executive</td>
+              <td><a href="#syndicate/:id/user/:id/dossier">@fingle</a></td>
             </tr>
 
             <tr>
@@ -62,17 +62,17 @@ var RosterContainer = React.createClass({
             </tr>
             <tr>
               <th scope="row">6</th>
-              <td>Faith</td>
-              <td>Ingle</td>
-              <td>Director</td>
-              <td><a href="#syndicate/:id/exec/roster">@fingle</a></td>
-            </tr>
-            <tr>
-              <th scope="row">7</th>
               <td>Susan</td>
               <td>Lohman</td>
               <td>Director</td>
               <td><a href="#syndicate/:id/exec/roster">@slohman</a></td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>Marcus</td>
+              <td>Hall</td>
+              <td>Director</td>
+              <td><a href="#syndicate/:id/exec/roster">@fingle</a></td>
             </tr>
 
             <tr>
@@ -98,7 +98,7 @@ var RosterContainer = React.createClass({
             </tr>
             <tr>
               <th scope="row">11</th>
-              <td>George</td>
+              <td>Tarek</td>
               <td>DeSouza</td>
               <td>Collaborator</td>
               <td><a href="#syndicate/:id/exec/roster">@gdesouza</a></td>
