@@ -119,10 +119,10 @@ var HomepageContainer = React.createClass({
   render: function(){
     return (
 
-    <div>
+    <div className="homepage">
       <div className="well">
         <h1>Syndicator</h1>
-        <h4>A customizable team-management system</h4>
+        <h4 id="homepage-logo-caption">A customizable team-management system</h4>
       </div>
       <div>
         <div className="row">

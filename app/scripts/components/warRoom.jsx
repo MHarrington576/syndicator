@@ -47,35 +47,30 @@ var WarRoomContainer = React.createClass({
 
       <div>
         <LimitedNav />
-        <h2>The War Room</h2>
-        <h3>Your Syndicates:</h3>
-
-        <a href="#syndicate/:id">Test Syndicate</a>
+        <h2 className="war-room-heading">The War Room</h2>
 
         <hr />
 
-        <a href="#user/:id/create-syndicate">
-          <i className="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
-          <br />
-          <span>Create a ne&#119; Syndicate</span>
-        </a>
+        <a href="#syndicate/:id">Riverside HS Speech &amp; Debate</a>
 
-        <br />
+        <br /><br />
 
-        <a href="#user/:id/war-room" className="open-modal">
-          <i className="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
-          <br />
-          <span>Join a Syndicate</span>
-        </a>
+        <div className="war-room-function">
+          <a href="#user/:id/create-syndicate">
+            <i className="fa fa-plus-circle fa-2x wr-icon" aria-hidden="true"></i>
+            <span>Create a ne&#119; Syndicate</span>
+          </a>
+        </div>
 
-        <br />
+        <br /><br />
 
-        <a href="#user/:id/settings" className="open-modal">
-          <i className="fa fa-gear fa-2x" aria-hidden="true"></i>
-          <br />
-          <span>Your Settings</span>
-        </a>
-    </div>
+        <div className="war-room-function">
+          <a href="#user/:id/war-room" className="open-modal">
+            <i className="fa fa-plus-circle fa-2x wr-icon" aria-hidden="true"></i>
+            <span>Join a Syndicate</span>
+          </a>
+        </div>
+      </div>
 
     );
   }

@@ -1,6 +1,6 @@
 $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
-@import 'https://fonts.googleapis.com/css?family=Raleway|Oswald';
+@import 'https://fonts.googleapis.com/css?family=Raleway|Oswald|Bungee';
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -8,24 +8,80 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 
 body {
   font-family: 'Raleway', sans-serif;
+  color: #FFFFFF;
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../images/alt-syndicator-background.jpg') no-repeat center fixed;
+  background-size: cover;
+  overflow-x: hidden;
 }
 
 h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Bungee', sans-serif;
   text-align: center;
+  color: #FFFFFF;
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.55);
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  color: #FFFFFF;
 }
 
 h4 {
   text-align: center;
 }
 
-a:hover {
-  text-decoration: none;
+a {
+  color: #FFFFFF;
 }
 
-.navbar {
+a:hover {
+  text-decoration: none;
+  color: #00D8B4;
+}
+
+.war-room-heading {
+  text-align: center;
+}
+
+.war-room-function {
+  display: inline;
+}
+
+.wr-icon {
+  display: inline-block;
+  padding-right: 5px;
+  position: relative;
+  top: 4px;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #00D8B4;
+}
+
+.table-hover tbody tr:hover td > a:hover {
+  color: #FFFFFF;
+}
+
+.navbar, .well {
   // position: fixed;
   text-align: center;
+  background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) );
+}
+
+.modal {
+  color: #000000;
+}
+
+.navbar-default, .navbar-collapse, .well {
+  border-color: rgba(0, 0, 0, 0.15)
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #00D8B4;
 }
 
 .all-navbar-links {
@@ -36,10 +92,18 @@ a:hover {
   float: left;
 }
 
+#homepage-logo-caption {
+  color: #FFFFFF;
+}
+
 .well {
   padding-top: 0;
   margin-bottom: 0;
   border-radius: 0;
+}
+
+.homepage {
+  color: #000000;
 }
 
 .code {

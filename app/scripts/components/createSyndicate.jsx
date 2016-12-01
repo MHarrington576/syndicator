@@ -8,7 +8,10 @@ var SyndicateForm = React.createClass({
     var name = '';
     var description = '';
     var iconUrl = '';
-    var bannerUrl = '';
+    var address = '';
+    var city = '';
+    var state = '';
+    var zip = '';
     var execCode = '';
     var sponsCode = '';
     var dirCode = '';
@@ -18,9 +21,13 @@ var SyndicateForm = React.createClass({
       name: name,
       description: description,
       iconUrl: iconUrl,
-      bannerUrl: bannerUrl,
+      address: address,
+      city: city,
+      state: state,
+      zip: zip,
       execCode: execCode,
       sponsCode: sponsCode,
+      dirCode: dirCode,
       collabCode: collabCode
     };
   },
@@ -104,8 +111,23 @@ var SyndicateForm = React.createClass({
           </div>
 
           <div className="form-group">
-            <label htmlFor="banner-input">Banner</label>
-            <input className="form-control" id="banner-input" type="file" name="banner" />
+            <label htmlFor="syndicate-address-input">Street Address</label>
+            <input className="form-control" id="syndicate-address-input" type="text" name="syndicate-address" placeholder="101 N Main St, Suite 400" required />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="syndicate-city-input">City</label>
+            <input className="form-control" id="syndicate-city-input" type="text" name="syndicate-city" placeholder="Greenville" required />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="syndicate-state-input">State</label>
+            <input className="form-control" id="syndicate-state-input" type="text" name="syndicate-state" placeholder="SC" required />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="syndicate-zip-input">Description</label>
+            <input className="form-control" id="syndicate-zip-input" type="number" name="syndicate-zip" placeholder="29601" required />
           </div>
 
           <input className="btn btn-info" type="submit" name="submit" value="Create Syndicate" />

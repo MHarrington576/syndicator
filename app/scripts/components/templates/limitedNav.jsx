@@ -18,13 +18,6 @@ function LimitedNav(props){
           <h1 id="navbar-logo">Syndicator</h1>
           <ul className="nav navbar-nav all-navbar-links">
             <li>
-              <a href="#testing" className="navbar-link">
-                <i className="fa fa-flask fa-2x" aria-hidden="true"></i>
-                <br />
-                <span>Testing</span>
-              </a>
-            </li>
-            <li>
               <a href="#syndicate/:id/user/:id/dossier" className="navbar-link">
                 <i className="fa fa-id-card-o fa-2x" aria-hidden="true"></i>
                 <br />

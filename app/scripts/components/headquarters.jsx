@@ -49,8 +49,18 @@ var HQContainer = React.createClass({
         <AddAnnouncement addNewAnnouncement={this.addNewAnnouncement}/>
 
         <aside className="col-sm-3 col-xs-12">
-          <h2>Syndicate Name</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dol eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h2>Riverside HS Speech &amp; Debate</h2>
+          <p>
+            This group is dedicated to providing you with important information about upcoming Riverside Speech and Debate events and activities. It will be revised on a regular basis, and out-of-date or off-topic posts will be deleted. If you have general questions to ask or important speech and debate information to share, do it here.<br /><br />
+            2012, 2013, 2014, 2015 and 2016 South Carolina State Champions<br />
+            2012 and 2015 SC NSDA District Cumulative Points Champion<br />
+            2013 NSDA Leading Chapter for Excellence in Speech<br />
+            2014 NSDA School of Excellence in Speech<br />
+            2013 and 2016 NSDA School of Honor in Speech<br />
+            2014 SC NSDA District Champions in Speech<br />
+            2016 SC NSDA District Champions in Debate<br />
+            2016 SC NSDA District Champions in Congress<br />
+          </p>
         </aside>
 
         <div className="announcement-board col-sm-9 col-xs-12">
