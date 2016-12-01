@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import "https://fonts.googleapis.com/css?family=Raleway|Oswald";
+@import "https://fonts.googleapis.com/css?family=Raleway|Oswald|Bungee";
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5763,20 +5763,67 @@ button.close {
   box-sizing: border-box; }
 
 body {
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  color: #FFFFFF;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/alt-syndicator-background.jpg") no-repeat center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/alt-syndicator-background.jpg") no-repeat center fixed;
+  background-size: cover;
+  overflow-x: hidden; }
 
 h1 {
+  font-family: 'Bungee', sans-serif;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.55); }
+
+h2 {
   font-family: 'Oswald', sans-serif;
-  text-align: center; }
+  color: #FFFFFF; }
 
 h4 {
   text-align: center; }
 
-a:hover {
-  text-decoration: none; }
+a {
+  color: #FFFFFF; }
 
-.navbar {
+a:hover {
+  text-decoration: none;
+  color: #00D8B4; }
+
+.war-room-heading {
   text-align: center; }
+
+.war-room-function {
+  display: inline; }
+
+.wr-icon {
+  display: inline-block;
+  padding-right: 5px;
+  position: relative;
+  top: 4px; }
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #00D8B4; }
+
+.table-hover tbody tr:hover td > a:hover {
+  color: #FFFFFF; }
+
+.navbar, .well {
+  text-align: center;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)); }
+
+.modal {
+  color: #000000; }
+
+.navbar-default, .navbar-collapse, .well {
+  border-color: rgba(0, 0, 0, 0.15); }
+
+.navbar-default .navbar-nav > li > a {
+  color: #FFFFFF; }
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #00D8B4; }
 
 .all-navbar-links {
   float: right; }
@@ -5784,10 +5831,16 @@ a:hover {
 #navbar-logo {
   float: left; }
 
+#homepage-logo-caption {
+  color: #FFFFFF; }
+
 .well {
   padding-top: 0;
   margin-bottom: 0;
   border-radius: 0; }
+
+.homepage {
+  color: #000000; }
 
 .code {
   font-family: monospace; }
