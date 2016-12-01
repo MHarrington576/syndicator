@@ -37,7 +37,7 @@ var DossierContainer = React.createClass({
                   <td>Current Piece:</td>
                   <td><a href="#syndicate/:id/user/:id/dossier">"Chronicles Simpkins Will Cut Your A** terisk"</a></td>
                   <td>Even&#116;:</td>
-                  <td>Dramatic Interpretation</td>
+                  <td>Duo Interpretation</td>
                 </tr>
                 <tr>
                   <th scope="row" />
