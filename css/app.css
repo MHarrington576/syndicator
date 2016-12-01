@@ -5770,6 +5770,9 @@ body {
   background-size: cover;
   overflow-x: hidden; }
 
+img {
+  max-height: 100%; }
+
 h1 {
   font-family: 'Bungee', sans-serif;
   text-align: center;
@@ -5844,4 +5847,50 @@ a:hover {
 
 .code {
   font-family: monospace; }
+
+.wr-card {
+  background-color: rgba(0, 0, 0, 0.25);
+  padding-bottom: 15px;
+  border-radius: 2%; }
+
+.panel-primary {
+  background: rgba(0, 0, 0, 0.25);
+  border: none; }
+
+.panel-primary > .panel-heading {
+  background-color: #00D8B4;
+  border: none;
+  text-align: center; }
+
+.panel-body {
+  text-align: center; }
+
+.dossier-name {
+  text-transform: uppercase;
+  text-shadow: 0px 3px rgba(0, 0, 0, 0.5);
+  font-size: 5vh; }
+
+.dossier-pic {
+  height: 20vh; }
+
+.dossier-img {
+  border-radius: 100%; }
+
+.dossier-auth-value {
+  background: #00D8B4; }
+
+.dossier-list-group {
+  background: transparent; }
+
+.dossier-syndicate {
+  font-family: 'Oswald', sans-serif; }
+
+.dossier-syndicate-container {
+  text-align: left; }
+
+.list-group {
+  background-color: rgba(0, 0, 0, 0.25); }
+
+.list-group-item {
+  color: #000000; }
 /*# sourceMappingURL=app.css.map */
