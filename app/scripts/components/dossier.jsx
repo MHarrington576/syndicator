@@ -28,26 +28,42 @@ var DossierContainer = React.createClass({
                 <tr>
                   <th scope="row" />
                   <td>Current Piece:</td>
-                  <td>"Cashmere If You Can"</td>
+                  <td><a href="#syndicate/:id/user/:id/dossier">"Cashmere If You Can"</a></td>
                   <td>Even&#116;:</td>
                   <td>Storytelling</td>
                 </tr>
                 <tr>
                   <th scope="row" />
                   <td>Current Piece:</td>
-                  <td>"Grounded"</td>
+                  <td><a href="#syndicate/:id/user/:id/dossier">"Chronicles Simpkins Will Cut Your A** terisk"</a></td>
                   <td>Even&#116;:</td>
                   <td>Dramatic Interpretation</td>
                 </tr>
                 <tr>
                   <th scope="row" />
                   <td>Current Piece:</td>
-                  <td>"Let's Build Something Together"</td>
+                  <td><a href="#syndicate/:id/user/:id/dossier">"Let's Build Something Together"</a></td>
                   <td>Even&#116;:</td>
                   <td>Original Oratory</td>
                 </tr>
               </tbody>
             </table>
+
+            <div className="panel-body">
+              <h3 className="dossier-syndicate-container"><a className="dossier-syndicate" href="#user/:id/war-room">Sample Syndicate</a></h3>
+              <h3 className="dossier-auth-value">Collaborator</h3>
+            </div>
+
+            <table className="table">
+              <thead />
+              <tbody>
+                <tr>
+                  <th scope="row" />
+                  <td>No data</td>
+                </tr>
+              </tbody>
+            </table>
+
           </div>
 
       </div>

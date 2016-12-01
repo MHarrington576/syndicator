@@ -51,7 +51,7 @@ var WarRoomContainer = React.createClass({
 
         <hr />
 
-        <div className="card card-block col-sm-5 col-xs-12 wr-card">
+        <div className="card card-block col-sm-4 col-sm-offset-1 col-xs-12 wr-card">
           <div className="card-block">
             <h2 className="card-title">Riverside HS Speech &amp; Debate</h2>
             <p className="card-text">This group is dedicated to providing you with important information about upcoming Riverside Speech and Debate events and activities. It will be revised on a regular basis, and out-of-date or off-topic posts will be deleted. If you have general questions to ask or important speech and debate information to share, do it here.</p>
@@ -59,10 +59,10 @@ var WarRoomContainer = React.createClass({
           </div>
         </div>
 
-        <div className="card card-block col-sm-5 col-sm-offset-1 col-xs-12 wr-card">
+        <div className="card card-block col-sm-4 col-sm-offset-2 col-xs-12 wr-card">
           <div className="card-block">
             <h2 className="card-title">Sample Syndicate</h2>
-            <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse dolore cillum.</p>
             <a href="#syndicate/:id" className="btn btn-primary wr-btn">View HQ</a>
           </div>
         </div>
