@@ -14,6 +14,13 @@ var Announcement = Backbone.Model.extend({
     var body = this.get('body');
 
     this.save();
+  },
+
+  deleteAnnouncement: function(heading, body){
+    var heading = this.get('heading');
+    var body = this.get('body');
+
+    this.destroy();
   }
 });
 

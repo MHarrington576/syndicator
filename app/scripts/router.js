@@ -11,7 +11,7 @@ var UserCreationContainer = require('./components/createUser.jsx').UserCreationC
 var WarRoomContainer = require('./components/warRoom.jsx').WarRoomContainer;
 var CreateSyndicateContainer = require('./components/createSyndicate.jsx').CreateSyndicateContainer;
 var SettingsContainer = require('./components/settings.jsx').SettingsContainer;
-var MessagesContainer = require('./components/messages.jsx').MessagesContainer;
+// var MessagesContainer = require('./components/messages.jsx').MessagesContainer;
 var HQContainer = require('./components/headquarters.jsx').HQContainer;
 var AgendaContainer = require('./components/agenda.jsx').AgendaContainer;
 var DeploymentContainer = require('./components/deployment.jsx').DeploymentContainer;
@@ -25,7 +25,7 @@ var AppRouter = Backbone.Router.extend({
     'user/create': 'createUser',
     'user/:id/war-room': 'warRoom',
     'user/:id/create-syndicate': 'createSyndicate',
-    'user/:id/messages': 'messages',
+    // 'user/:id/messages': 'messages',
     'user/:id/settings': 'settings',
     'syndicate/:id': 'headquarters',
     'syndicate/:id/agenda': 'agenda',
@@ -73,12 +73,12 @@ var AppRouter = Backbone.Router.extend({
     );
   },
 
-  messages: function(){
-    ReactDOM.render(
-      React.createElement(MessagesContainer, {router: this}),
-      document.getElementById('app')
-    );
-  },
+  // messages: function(){
+  //   ReactDOM.render(
+  //     React.createElement(MessagesContainer, {router: this}),
+  //     document.getElementById('app')
+  //   );
+  // },
 
   settings: function(){
     ReactDOM.render(

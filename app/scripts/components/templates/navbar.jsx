@@ -61,13 +61,6 @@ function MainNav(props){
               </a>
             </li>
             <li>
-              <a href="#user/:id/messages" className="navbar-link">
-                <i className="fa fa-commenting-o fa-2x" aria-hidden="true"></i>
-                <br />
-                <span>Messages</span>
-              </a>
-            </li>
-            <li>
               <a href="#user/:id/war-room" className="navbar-link">
                 <i className="fa fa-tasks fa-2x" aria-hidden="true"></i>
                 <br />

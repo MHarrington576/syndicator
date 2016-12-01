@@ -25,10 +25,10 @@ function LimitedNav(props){
               </a>
             </li>
             <li>
-              <a href="#user/:id/messages" className="navbar-link">
-                <i className="fa fa-commenting-o fa-2x" aria-hidden="true"></i>
+              <a href="#syndicate/:id/user/:id/dossier" className="navbar-link">
+                <i className="fa fa-id-card-o fa-2x" aria-hidden="true"></i>
                 <br />
-                <span>Messages</span>
+                <span>Dossier</span>
               </a>
             </li>
             <li>

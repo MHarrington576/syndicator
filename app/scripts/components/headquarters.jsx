@@ -3,6 +3,31 @@ var React = require('react');
 var MainNav = require('./templates/navbar.jsx').MainNav;
 var AddAnnouncement = require('./templates/announcementModal.jsx').AddAnnouncementModal;
 var Announcement = require('../models/announcement').Announcement;
+var AnnouncementCollection = require('../models/announcement').AnnouncementCollection;
+
+var AnnouncementComponent = React.createClass({
+  // getInitialState: function(){
+  //   var self = this;
+  //   var announcementCollection = new AnnouncementCollection();
+  //
+  //   announcementCollection.fetch().then(function(){
+  //     self.setState({collection: announcementCollection});
+  //     setInterval(function(){
+  //       announcementCollection.fetch().then(function(){
+  //         self.setState({collection: announcementCollection});
+  //       });
+  //     }, 60000);
+  //   })
+  // },
+
+  render: function(){
+    return (
+
+      <h3>AnnouncementComponent</h3>
+
+    );
+  }
+});
 
 var HQContainer = React.createClass({
   getInitialState: function(){
@@ -34,6 +59,8 @@ var HQContainer = React.createClass({
             <span>Add an Announcement</span>
           </button>
           <br />
+
+          <AnnouncementComponent />
 
           <h3>This Is an Announcement</h3>
           <div>
