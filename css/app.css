@@ -5793,6 +5793,9 @@ a:hover {
   text-decoration: none;
   color: #00D8B4; }
 
+aside {
+  background: rgba(0, 0, 0, 0.25); }
+
 .war-room-heading {
   text-align: center; }
 
