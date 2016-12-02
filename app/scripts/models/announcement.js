@@ -19,7 +19,7 @@ var Announcement = Backbone.Model.extend({
 
   deleteAnnouncement: function(objectId){
     $.ajax({
-      url:'https://shadow-of-the-colossus-server.herokuapp.com/classes/SyndicatorAnnouncements/' + objectId,
+      url: 'https://shadow-of-the-colossus-server.herokuapp.com/classes/SyndicatorAnnouncements/' + objectId,
       type: 'DELETE',
       success: function(result){
         console.log(result);
