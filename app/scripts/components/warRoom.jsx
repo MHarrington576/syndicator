@@ -54,9 +54,6 @@ var WarRoomContainer = React.createClass({
         <div className="card card-block col-sm-4 col-sm-offset-1 col-xs-12 wr-card">
           <div className="card-block">
             <h2 className="card-title">Riverside HS Speech &amp; Debate</h2>
-            <br /><br />
-            <img src="../images/riverside-s-and-d-logo.jpg" />
-            <br /><br />
             <p className="card-text">This group is dedicated to providing you with important information about upcoming Riverside Speech and Debate events and activities. It will be revised on a regular basis, and out-of-date or off-topic posts will be deleted. If you have general questions to ask or important speech and debate information to share, do it here.</p>
             <a href="#syndicate/:id" className="btn btn-primary wr-btn">View HQ</a>
           </div>

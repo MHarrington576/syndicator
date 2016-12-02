@@ -16,3 +16,4 @@ Aided by the following:
 * Atom.io
 * Heroku (https://heroku.com/)
 * Parse (https://parseplatform.github.io/)
+* Yelp Fusion API (https://www.yelp.com/developers)

@@ -15,19 +15,17 @@ var Dossier = Backbone.Model.extend({
     });
   },
 
-  handleSubmit: function(){
+  handleSubmit: function(e){
     e.preventDefault();
-    var picture = document.getElementById('picture-input')[0].files[0];
+    var picture = document.getElementById('user-avatar-input')[0].files[0];
     var file = new FileModel();
     file.set('name', icon.name);
     file.set('data', icon);
     file.save().done(function(){
-      var newDossier = {
-        name: this.state.name,
-        description: this.state.description,
+      var newAvatar = {
         icon: file.get('url')
       };
-      this.props.handleSubmit(newDossier);
+      this.props.handleSubmit(newAvatar);
     });
   }
 });

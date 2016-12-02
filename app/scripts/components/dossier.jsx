@@ -1,8 +1,36 @@
 var React = require('react');
 
 var MainNav = require('./templates/navbar.jsx').MainNav;
+var FileModel = require('../models/file').FileModel;
 
 var DossierContainer = React.createClass({
+  getInitialState: function(){
+    return {
+      imageUrl: "https://unsplash.it/100/100"
+    }
+  },
+
+  componentDidMount: function(newAvatar){
+    return {
+      imageUrl: newAvatar
+    }
+  },
+
+  handleSubmit: function(e){
+    e.preventDefault();
+    var self = this;
+    var picture = document.getElementById('user-avatar-input').files[0];
+    var file = new FileModel();
+    file.set('name', picture.name);
+    file.set('data', picture);
+    file.save().done(function(){
+      var newAvatar = {
+        picture: file.get('url')
+      };
+      self.setState({imageUrl: newAvatar.picture});
+    });
+  },
+
   render: function(){
     return (
 
@@ -14,8 +42,14 @@ var DossierContainer = React.createClass({
               <h2 className="dossier-name">Faith Ingle</h2>
             </div>
             <div className="panel-body">
+
+              <form id="user-creation-form" encType="multipart/form-data/" onSubmit={this.handleSubmit}>
+                <input className="form-control" id="user-avatar-input" type="file" name="user-avatar" />
+                <input className="btn btn-info" type="submit" name="submit" value="Upload" />
+              </form>
+
               <div className="dossier-pic">
-                <img className="dossier-img" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/15203302_819641611512028_6937041629310300404_n.jpg?oh=8c74737441f4c6912f7ffa2e2dcee91b&oe=58AE3EBD" />
+                <img className="dossier-img" id="dossier-avatar" src={this.state.imageUrl} />
               </div>
               <h3 className="dossier-syndicate-container"><a className="dossier-syndicate" href="#syndicate/:id">Riverside HS Speech &amp; Debate</a></h3>
               <h3 className="dossier-auth-value">Executive</h3>

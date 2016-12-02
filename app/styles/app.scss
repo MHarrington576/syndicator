@@ -76,6 +76,11 @@ aside {
   background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) );
 }
 
+.ann-edit-btn, .ann-delete-btn {
+  float: right;
+  display: inline;
+}
+
 .modal {
   color: #000000;
 }
@@ -112,6 +117,10 @@ aside {
 
 .homepage {
   color: #000000;
+}
+
+.ui-announcement-heading {
+  font-family: 'Oswald', sans-serif;
 }
 
 .code {
@@ -175,4 +184,10 @@ aside {
 
 .list-group-item {
   color: #000000;
+}
+
+.syndicate-logo {
+  width: 200px;
+  height: 100px;
+  background: url('../images/riverside-s-and-d-logo.jpg');
 }

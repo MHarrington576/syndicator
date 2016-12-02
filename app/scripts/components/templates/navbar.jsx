@@ -26,13 +26,6 @@ function MainNav(props){
               </a>
             </li>
             <li>
-              <a href="#syndicate/:id/agenda" className="navbar-link">
-                <i className="fa fa-calendar fa-2x" aria-hidden="true"></i>
-                <br />
-                <span>Agenda</span>
-              </a>
-            </li>
-            <li>
               <a href="#syndicate/:id/exec/deployment" className="navbar-link exec">
                 <i className="fa fa-globe fa-2x" aria-hidden="true"></i>
                 <br />

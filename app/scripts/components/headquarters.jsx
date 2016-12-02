@@ -21,9 +21,19 @@ var AnnouncementComponent = React.createClass({
   // },
 
   render: function(){
+    var announcement = this.props.announcement;
     return (
 
-      <h3>AnnouncementComponent</h3>
+      <div>
+        <h3 className="ui-announcement-heading">{announcement.get('heading')}</h3>
+        <p>{announcement.get('body')}</p>
+        <br />
+        <span>ATTACHMENT</span>
+        <button className="btn btn-danger ann-delete-btn" type="submit" deleteAnnouncement={this.deleteAnnouncement} onSubmit={console.log('working')} onSubmit={announcement.removeAnnouncement}>Delete</button>
+        <button className="btn btn-primary ann-edit-btn">Edit</button>
+
+        <hr />
+      </div>
 
     );
   }
@@ -32,24 +42,43 @@ var AnnouncementComponent = React.createClass({
 var HQContainer = React.createClass({
   getInitialState: function(){
     return {
-      announcement: new Announcement()
+      announcement: new Announcement(),
+      announcementCollection: new AnnouncementCollection()
     };
   },
 
+  componentWillMount: function(){
+    var self = this;
+    this.state.announcementCollection.fetch().then(function(){
+      self.setState({announcementCollection: self.state.announcementCollection});
+    });
+  },
+
   addNewAnnouncement: function(heading, body){
+    console.log('fucking working');
     this.state.announcement.set({heading: heading, body: body});
     this.state.announcement.postAnnouncement(heading, body);
   },
 
+  removeAnnouncement: function(){
+    this.state.announcement.deleteAnnouncement(objectId);
+  },
+
   render: function(){
+    var announcementList = this.state.announcementCollection.map(function(announcement){
+      return (
+        <AnnouncementComponent key={announcement.cid} announcement={announcement} />
+      );
+    });
     return (
 
       <div>
         <MainNav />
-        <AddAnnouncement addNewAnnouncement={this.addNewAnnouncement}/>
+        <AddAnnouncement addNewAnnouncement={this.addNewAnnouncement} />
 
         <aside className="col-sm-3 col-xs-12">
           <h2>Riverside HS Speech &amp; Debate</h2>
+          <div className="syndciate-logo" />
           <p>
             This group is dedicated to providing you with important information about upcoming Riverside Speech and Debate events and activities. It will be revised on a regular basis, and out-of-date or off-topic posts will be deleted. If you have general questions to ask or important speech and debate information to share, do it here.<br /><br />
             2012, 2013, 2014, 2015 and 2016 South Carolina State Champions<br />
@@ -69,21 +98,11 @@ var HQContainer = React.createClass({
             <span>Add an Announcement</span>
           </button>
           <br />
-
-          <AnnouncementComponent />
-
-          <h3>This Is an Announcement</h3>
-          <div>
-            <p>IMG</p>
-            <span>Announcing User</span>
-          </div>
-          <h6>00 Month 2016</h6>
-          <p>Jianbing VHS kitsch scenester, tofu veniam labore eu exercitation ea messenger bag gluten-free irure placeat taxidermy. Crucifix vinyl assumenda, 3 wolf moon echo park jianbing laboris officia slow-carb fanny pack tote bag flexitarian williamsburg cardigan. Listicle before they sold out affogato sriracha, stumptown paleo normcore. Fixie proident veniam, tofu nesciunt elit assumenda taxidermy. Elit af semiotics anim skateboard direct trade celiac voluptate deserunt, enamel pin accusamus culpa four loko aesthetic pop-up. Af aute viral franzen green juice magna, irure deserunt succulents ad coloring book man bun. Tousled art party synth nostrud, literally cillum snackwave subway tile pitchfork listicle 90's occaecat post-ironic odio pour-over.</p>
-
-          <br />
           <hr />
-        </div>
 
+          {announcementList}
+
+        </div>
       </div>
 
     );
