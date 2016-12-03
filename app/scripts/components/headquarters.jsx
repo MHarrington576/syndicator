@@ -6,30 +6,16 @@ var Announcement = require('../models/announcement').Announcement;
 var AnnouncementCollection = require('../models/announcement').AnnouncementCollection;
 
 var AnnouncementComponent = React.createClass({
-  // getInitialState: function(){
-  //   var self = this;
-  //   var announcementCollection = new AnnouncementCollection();
-  //
-  //   announcementCollection.fetch().then(function(){
-  //     self.setState({collection: announcementCollection});
-  //     setInterval(function(){
-  //       announcementCollection.fetch().then(function(){
-  //         self.setState({collection: announcementCollection});
-  //       });
-  //     }, 60000);
-  //   })
-  // },
-
   render: function(){
     var announcement = this.props.announcement;
+    var announcementId = announcement.get('objectId');
     return (
 
       <div>
         <h3 className="ui-announcement-heading">{announcement.get('heading')}</h3>
         <p>{announcement.get('body')}</p>
         <br />
-        <span>ATTACHMENT</span>
-        <button className="btn btn-danger ann-delete-btn" type="submit" deleteAnnouncement={this.deleteAnnouncement} onSubmit={console.log('working')} onSubmit={announcement.removeAnnouncement}>Delete</button>
+        <button className="btn btn-danger ann-delete-btn" type="submit" deleteAnnouncement={this.deleteAnnouncement} onSubmit={announcement.removeAnnouncement}>Delete</button>
         <button className="btn btn-primary ann-edit-btn">Edit</button>
 
         <hr />
@@ -55,7 +41,6 @@ var HQContainer = React.createClass({
   },
 
   addNewAnnouncement: function(heading, body){
-    console.log('fucking working');
     this.state.announcement.set({heading: heading, body: body});
     this.state.announcement.postAnnouncement(heading, body);
   },
@@ -108,6 +93,8 @@ var HQContainer = React.createClass({
     );
   }
 });
+
+var el = document.getElementById('')
 
 module.exports = {
   HQContainer: HQContainer

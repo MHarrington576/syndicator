@@ -1,3 +1,4 @@
+var $ = require('jquery');
 var React = require('react');
 
 var MainNav = require('./templates/navbar.jsx').MainNav;
@@ -10,10 +11,10 @@ var DossierContainer = React.createClass({
     }
   },
 
-  componentDidMount: function(newAvatar){
-    return {
-      imageUrl: newAvatar
-    }
+  handleDelete: function(e){
+    e.preventDefault();
+    var element = document.querySelector('#dossier-avatar');
+    element.style.display = "none";
   },
 
   handleSubmit: function(e){
@@ -29,6 +30,8 @@ var DossierContainer = React.createClass({
       };
       self.setState({imageUrl: newAvatar.picture});
     });
+    var element = document.querySelector('#dossier-avatar');
+    element.style.display = "inline-block";
   },
 
   render: function(){
@@ -48,9 +51,12 @@ var DossierContainer = React.createClass({
                 <input className="btn btn-info" type="submit" name="submit" value="Upload" />
               </form>
 
-              <div className="dossier-pic">
-                <img className="dossier-img" id="dossier-avatar" src={this.state.imageUrl} />
-              </div>
+              <form onSubmit={this.handleDelete}>
+                <div className="dossier-pic">
+                  <img className="dossier-img" id="dossier-avatar" src={this.state.imageUrl} />
+                </div>
+                <input type="submit" value="Delete" id="delete-dossier-avatar" />
+              </form>
               <h3 className="dossier-syndicate-container"><a className="dossier-syndicate" href="#syndicate/:id">Riverside HS Speech &amp; Debate</a></h3>
               <h3 className="dossier-auth-value">Executive</h3>
             </div>
