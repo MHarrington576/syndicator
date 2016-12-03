@@ -5802,6 +5802,9 @@ aside {
 .war-room-function {
   display: inline; }
 
+#fill-me-up {
+  display: none; }
+
 .wr-icon {
   display: inline-block;
   padding-right: 5px;
@@ -5908,4 +5911,5 @@ aside {
   width: 200px;
   height: 100px;
   background: url("../images/riverside-s-and-d-logo.jpg"); }
+
 /*# sourceMappingURL=app.css.map */
