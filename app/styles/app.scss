@@ -12,6 +12,7 @@ body {
   background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../images/alt-syndicator-background.jpg') no-repeat center fixed;
   background-size: cover;
   overflow-x: hidden;
+  margin-left: 10px;
 }
 
 img {
@@ -78,6 +79,7 @@ aside {
   // position: fixed;
   text-align: center;
   background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) );
+  margin-left: -10px;
 }
 
 .ann-edit-btn, .ann-delete-btn {

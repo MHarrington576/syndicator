@@ -126,7 +126,7 @@ var SyndicateForm = React.createClass({
           </div>
 
           <div className="form-group">
-            <label htmlFor="syndicate-zip-input">Description</label>
+            <label htmlFor="syndicate-zip-input">ZIP Code</label>
             <input className="form-control" id="syndicate-zip-input" type="number" name="syndicate-zip" placeholder="29601" required />
           </div>
 
@@ -136,10 +136,10 @@ var SyndicateForm = React.createClass({
 
         <br />
 
-        <p>Executive Code: <span className="code">{(Math.random() / 3.1415926535897932383).toString(36).toUpperCase().slice(18)}</span></p>
-        <p>Sponsor Code: <span className="code">{(Math.random() / 3.1415926535897932383).toString(36).toUpperCase().slice(18)}</span></p>
-        <p>Director Code: <span className="code">{(Math.random() / 3.1415926535897932383).toString(36).toUpperCase().slice(18)}</span></p>
-        <p>Collaborator Code: <span className="code">{(Math.random() / 3.1415926535897932383).toString(36).toUpperCase().slice(18)}</span></p>
+        <p>Executive Code: <span className="code">{(Math.random() / 3.1415926535897932385).toString(36).toUpperCase().slice(18)}</span></p>
+        <p>Sponsor Code: <span className="code">{(Math.random() / 3.1415926535897932385).toString(36).toUpperCase().slice(18)}</span></p>
+        <p>Director Code: <span className="code">{(Math.random() / 3.1415926535897932385).toString(36).toUpperCase().slice(18)}</span></p>
+        <p>Collaborator Code: <span className="code">{(Math.random() / 3.1415926535897932385).toString(36).toUpperCase().slice(18)}</span></p>
       </div>
 
     );
