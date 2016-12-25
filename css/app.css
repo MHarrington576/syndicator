@@ -5768,7 +5768,8 @@ body {
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/alt-syndicator-background.jpg") no-repeat center fixed;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/alt-syndicator-background.jpg") no-repeat center fixed;
   background-size: cover;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  margin-left: 10px; }
 
 img {
   max-height: 100%; }
@@ -5820,7 +5821,8 @@ aside {
 .navbar, .well {
   text-align: center;
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)); }
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+  margin-left: -10px; }
 
 .ann-edit-btn, .ann-delete-btn {
   float: right;
@@ -5911,5 +5913,4 @@ aside {
   width: 200px;
   height: 100px;
   background: url("../images/riverside-s-and-d-logo.jpg"); }
-
 /*# sourceMappingURL=app.css.map */
